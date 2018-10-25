@@ -313,6 +313,7 @@ export enum SKILLS {
   LORE_POISON = 'lore (poison)',
   LORE_POLITICS = 'lore (politics)',
   LORE_PROPHECY = 'lore (prophecy)',
+  LORE_ROUTES = 'lore (routes)',
   LORE_SCIENCE = 'lore (science)',
   LORE_SIGMAR = 'lore (sigmar)',
   LORE_SPIRITS = 'lore (spirits)',

@@ -557,7 +557,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.ACADEMICS,
     name: CAREERS.WIZARD,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.HIGH_ELF, SPECIES.WOOD_ELF],
     characteristics: [1, 0, 0, 0, 3, 2, 0, 1, 1, 4],
     levels: ['wizard\'s apprentice', 'wizard', 'master wizard', 'wizard lord'],
     status: [[STATUS.BRASS, 3], [STATUS.SILVER, 3], [STATUS.GOLD, 1], [STATUS.GOLD, 2]],
@@ -623,7 +623,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.BURGHERS,
     name: CAREERS.AGITATOR,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
     characteristics: [3, 1, 0, 0, 4, 2, 0, 1, 0, 1],
     levels: ['pamphleteer', 'agitator', 'rabble rouser', 'demagogue'],
     status: [[STATUS.BRASS, 1], [STATUS.BRASS, 2], [STATUS.BRASS, 3], [STATUS.BRASS, 5]],
@@ -688,7 +688,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.BURGHERS,
     name: CAREERS.ARTISAN,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF, SPECIES.WOOD_ELF],
     characteristics: [0, 0, 1, 1, 0, 0, 1, 4, 3, 2],
     levels: ['apprentice artisan', 'artisan', 'master artisan', 'guildmaster'],
     status: [[STATUS.BRASS, 2], [STATUS.SILVER, 1], [STATUS.SILVER, 3], [STATUS.GOLD, 1]],
@@ -753,7 +753,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.BURGHERS,
     name: CAREERS.BEGGAR,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
     characteristics: [3, 0, 0, 1, 4, 1, 0, 0, 2, 1],
     levels: ['pauper', 'beggar', 'master beggar', 'beggar king'],
     status: [[STATUS.BRASS, 0], [STATUS.BRASS, 2], [STATUS.BRASS, 4], [STATUS.SILVER, 2]],
@@ -818,7 +818,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.BURGHERS,
     name: CAREERS.INVESTIGATOR,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF],
     characteristics: [0, 0, 0, 0, 1, 1, 3, 1, 4, 2],
     levels: ['sleuth', 'investigator', 'master investigator', 'detective'],
     status: [[STATUS.SILVER, 1], [STATUS.SILVER, 2], [STATUS.SILVER, 3], [STATUS.SILVER, 5]],
@@ -883,7 +883,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.BURGHERS,
     name: CAREERS.MERCHANT,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF],
     characteristics: [1, 0, 0, 0, 3, 1, 0, 2, 4, 1],
     levels: ['trader', 'merchant', 'master merchant', 'merchant prince'],
     status: [[STATUS.SILVER, 2], [STATUS.SILVER, 5], [STATUS.GOLD, 1], [STATUS.GOLD, 3]],
@@ -953,7 +953,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.BURGHERS,
     name: CAREERS.RAT_CATCHER,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
     characteristics: [1, 1, 4, 2, 3, 0, 0, 0, 1, 0],
     levels: ['rat hunter', 'rat catcher', 'sewer jack', 'exterminator'],
     status: [[STATUS.BRASS, 3], [STATUS.SILVER, 1], [STATUS.SILVER, 2], [STATUS.SILVER, 3]],
@@ -1018,7 +1018,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.BURGHERS,
     name: CAREERS.TOWNSMAN,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF],
     characteristics: [0, 0, 0, 0, 2, 1, 3, 1, 4, 1],
     levels: ['clerk', 'townsman', 'town councillor', 'burgomeister'],
     status: [[STATUS.SILVER, 1], [STATUS.SILVER, 2], [STATUS.SILVER, 5], [STATUS.GOLD, 1]],
@@ -1083,7 +1083,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.BURGHERS,
     name: CAREERS.WATCHMAN,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF],
     characteristics: [1, 0, 1, 0, 3, 0, 0, 4, 2, 1],
     levels: ['watch recruit', 'watchman', 'watch sergeant', 'watch captain'],
     status: [[STATUS.BRASS, 3], [STATUS.SILVER, 1], [STATUS.SILVER, 3], [STATUS.GOLD, 1]],
@@ -1148,7 +1148,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.COURTIERS,
     name: CAREERS.ADVISOR,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF, SPECIES.WOOD_ELF],
     characteristics: [0, 0, 0, 1, 1, 1, 0, 3, 4, 2],
     levels: ['aide', 'advisor', 'counsellor', 'chancellor'],
     status: [[STATUS.SILVER, 2], [STATUS.SILVER, 4], [STATUS.GOLD, 1], [STATUS.GOLD, 3]],
@@ -1213,7 +1213,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.COURTIERS,
     name: CAREERS.ARTIST,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF, SPECIES.WOOD_ELF],
     characteristics: [0, 0, 1, 0, 1, 0, 1, 4, 3, 2],
     levels: ['apprentice artist', 'artist', 'master artist', 'maestro'],
     status: [[STATUS.SILVER, 1], [STATUS.SILVER, 3], [STATUS.SILVER, 5], [STATUS.GOLD, 2]],
@@ -1279,7 +1279,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.COURTIERS,
     name: CAREERS.DUELIST,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HIGH_ELF],
     characteristics: [1, 2, 3, 0, 1, 1, 0, 0, 4, 0],
     levels: ['fencer', 'duellist', 'duelmaster', 'judicial champion'],
     status: [[STATUS.SILVER, 3], [STATUS.SILVER, 5], [STATUS.GOLD, 1], [STATUS.GOLD, 3]],
@@ -1344,7 +1344,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.COURTIERS,
     name: CAREERS.ENVOY,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF, SPECIES.WOOD_ELF],
     characteristics: [0, 0, 0, 1, 3, 1, 0, 2, 4, 1],
     levels: ['herald', 'envoy', 'diplomat', 'ambassador'],
     status: [[STATUS.SILVER, 2], [STATUS.SILVER, 4], [STATUS.GOLD, 2], [STATUS.GOLD, 5]],
@@ -1409,7 +1409,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.COURTIERS,
     name: CAREERS.NOBLE,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HIGH_ELF, SPECIES.WOOD_ELF],
     characteristics: [1, 0, 0, 0, 1, 0, 1, 3, 4, 2],
     levels: ['scion', 'noble', 'magnate', 'noble lord'],
     status: [[STATUS.GOLD, 1], [STATUS.GOLD, 3], [STATUS.GOLD, 5], [STATUS.GOLD, 7]],
@@ -1474,7 +1474,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.COURTIERS,
     name: CAREERS.SERVANT,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
     characteristics: [0, 0, 1, 1, 2, 1, 0, 3, 0, 4],
     levels: ['menial', 'servant', 'attendant', 'steward'],
     status: [[STATUS.SILVER, 1], [STATUS.SILVER, 3], [STATUS.SILVER, 5], [STATUS.GOLD, 1]],
@@ -1539,7 +1539,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.COURTIERS,
     name: CAREERS.SPY,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF, SPECIES.WOOD_ELF],
     characteristics: [2, 0, 0, 0, 3, 1, 0, 4, 1, 1],
     levels: ['informer', 'spy', 'agent', 'spymaster'],
     status: [[STATUS.BRASS, 3], [STATUS.SILVER, 3], [STATUS.GOLD, 1], [STATUS.GOLD, 4]],
@@ -1604,7 +1604,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.COURTIERS,
     name: CAREERS.WARDEN,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF],
     characteristics: [2, 0, 1, 1, 0, 0, 0, 4, 1, 3],
     levels: ['custodian', 'warden', 'seneschal', 'governor'],
     status: [[STATUS.SILVER, 1], [STATUS.SILVER, 3], [STATUS.GOLD, 1], [STATUS.GOLD, 3]],
@@ -1669,7 +1669,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.PEASANTS,
     name: CAREERS.BAILIFF,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
     characteristics: [1, 0, 0, 0, 1, 3, 0, 4, 1, 2],
     levels: ['tax collector', 'bailiff', 'reeve', 'magistrate'],
     status: [[STATUS.SILVER, 1], [STATUS.SILVER, 5], [STATUS.GOLD, 1], [STATUS.GOLD, 3]],
@@ -1734,7 +1734,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.PEASANTS,
     name: CAREERS.HEDGE_WITCH,
-    limitations: [],
+    limitations: [SPECIES.HUMAN],
     characteristics: [0, 0, 0, 1, 1, 0, 1, 2, 4, 3],
     levels: ['hedge apprentice', 'hedge witch', 'hedge master', 'hedgewise'],
     status: [[STATUS.BRASS, 1], [STATUS.BRASS, 2], [STATUS.BRASS, 3], [STATUS.BRASS, 5]],
@@ -1799,7 +1799,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.PEASANTS,
     name: CAREERS.HERBALIST,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.HALFLING, SPECIES.HIGH_ELF, SPECIES.WOOD_ELF],
     characteristics: [0, 0, 0, 1, 1, 1, 2, 4, 0, 3],
     levels: ['herb gatherer', 'herbalist', 'herb master', 'herbwise'],
     status: [[STATUS.BRASS, 2], [STATUS.BRASS, 4], [STATUS.SILVER, 1], [STATUS.SILVER, 3]],
@@ -1864,7 +1864,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.PEASANTS,
     name: CAREERS.HUNTER,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF, SPECIES.WOOD_ELF],
     characteristics: [0, 2, 1, 1, 3, 0, 1, 4, 0, 0],
     levels: ['trapper', 'hunter', 'tracker', 'huntsmaster'],
     status: [[STATUS.BRASS, 2], [STATUS.BRASS, 4], [STATUS.SILVER, 1], [STATUS.SILVER, 3]],
@@ -1929,7 +1929,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.PEASANTS,
     name: CAREERS.MINER,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
     characteristics: [2, 0, 1, 1, 3, 0, 0, 0, 1, 4],
     levels: ['prospector', 'miner', 'master miner', 'mine foreman'],
     status: [[STATUS.BRASS, 2], [STATUS.BRASS, 4], [STATUS.BRASS, 5], [STATUS.SILVER, 4]],
@@ -1994,7 +1994,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.PEASANTS,
     name: CAREERS.MYSTIC,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.WOOD_ELF],
     characteristics: [0, 0, 0, 0, 1, 3, 1, 4, 2, 1],
     levels: ['fortune teller', 'mystic', 'sage', 'seer'],
     status: [[STATUS.BRASS, 1], [STATUS.BRASS, 2], [STATUS.BRASS, 3], [STATUS.BRASS, 4]],
@@ -2059,7 +2059,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.PEASANTS,
     name: CAREERS.SCOUT,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF, SPECIES.WOOD_ELF],
     characteristics: [0, 2, 0, 1, 1, 1, 4, 3, 0, 0],
     levels: ['guide', 'scout', 'pathfinder', 'explorer'],
     status: [[STATUS.BRASS, 3], [STATUS.BRASS, 5], [STATUS.SILVER, 1], [STATUS.SILVER, 5]],
@@ -2124,7 +2124,7 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.PEASANTS,
     name: CAREERS.VILLAGER,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
     characteristics: [2, 0, 1, 1, 0, 1, 0, 4, 0, 3],
     levels: ['peasant', 'villager', 'councillor', 'village elder'],
     status: [[STATUS.BRASS, 2], [STATUS.BRASS, 3], [STATUS.BRASS, 4], [STATUS.SILVER, 2]],
@@ -2188,140 +2188,132 @@ export const Careers: ICareer[] = [
   {
     class: CLASSES.RANGERS,
     name: CAREERS.BOUNTY_HUNTER,
-    limitations: [],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF, SPECIES.WOOD_ELF],
+    characteristics: [1, 2, 3, 1, 0, 1, 0, 4, 0, 0],
+    levels: ['thief-taker', 'bounty hunter', 'master bounty hunter', 'bounty hunter general'],
+    status: [[STATUS.SILVER, 1], [STATUS.SILVER, 3], [STATUS.SILVER, 5], [STATUS.GOLD, 1]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.BRIBERY,
+        SKILLS.CHARM,
+        SKILLS.GOSSIP,
+        SKILLS.HAGGLE,
+        SKILLS.INTUITION,
+        SKILLS.MELEE_BASIC,
+        SKILLS.OUTDOOR_SURVIVAL,
+        SKILLS.PERCEPTION
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.ATHLETICS,
+        SKILLS.ENDURANCE,
+        SKILLS.INTIMIDATE,
+        SKILLS.RANGED_CROSSBOW,
+        SKILLS.RANGED_ENTANGLING,
+        SKILLS.TRACK
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.ANIMAL_CARE,
+        SKILLS.CLIMB,
+        SKILLS.RIDE_HORSE,
+        SKILLS.SWIM
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.DRIVE,
+        SKILLS.LORE_LAW
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.BREAK_AND_ENTER,
+        TALENTS.SHADOW,
+        TALENTS.STRIKE_TO_STUN,
+        TALENTS.SUAVE
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.MARKSMAN,
+        TALENTS.RELENTLESS,
+        TALENTS.SEASONED_TRAVELLER,
+        TALENTS.STRONG_BACK
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.ACCURATE_SHOT,
+        TALENTS.CAREFUL_STRIKE,
+        TALENTS.DUAL_WIELDER,
+        TALENTS.SPRINTER
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.DEADEYE_SHOT,
+        TALENTS.FEARLESS_BOUNTIES,
+        TALENTS.HARDY,
+        TALENTS.SURE_SHOT
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.RANGERS,
     name: CAREERS.COACHMAN,
-    limitations: [],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
+    characteristics: [3, 1, 0, 1, 4, 2, 0, 0, 1, 0],
+    levels: ['postilion', 'coachman', 'coach master', 'route master'],
+    status: [[STATUS.SILVER, 1], [STATUS.SILVER, 2], [STATUS.SILVER, 3], [STATUS.SILVER, 5]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.ANIMAL_CARE,
+        SKILLS.CHARM_ANIMAL,
+        SKILLS.CLIMB,
+        SKILLS.DRIVE,
+        SKILLS.ENDURANCE,
+        SKILLS.PERCEPTION,
+        SKILLS.RANGED_ENTANGLING,
+        SKILLS.RIDE_HORSE
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.CONSUME_ALCOHOL,
+        SKILLS.GOSSIP,
+        SKILLS.INTUITION,
+        SKILLS.LORE_LOCAL,
+        SKILLS.NAVIGATION,
+        SKILLS.RANGED_BLACKPOWDER
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.ANIMAL_TRAINING_HORSE,
+        SKILLS.INTIMIDATE,
+        SKILLS.LANGUAGE_ANY,
+        SKILLS.LORE_ROUTES
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.CHARM,
+        SKILLS.LEADERSHIP
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.ANIMAL_AFFINITY,
+        TALENTS.SEASONED_TRAVELLER,
+        TALENTS.TRICK_RIDING,
+        TALENTS.TENACIOUS
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.COOLHEADED,
+        TALENTS.CRACK_THE_WHIP,
+        TALENTS.GUNNER,
+        TALENTS.STRONG_MINDED
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.ACCURATE_SHOT,
+        TALENTS.DEALMAKER,
+        TALENTS.FEARLESS_OUTLAWS,
+        TALENTS.NOSE_FOR_TROUBLE
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.FEARLESS_BEASTMEN,
+        TALENTS.MARKSMAN,
+        TALENTS.ORIENTATION,
+        TALENTS.RAPID_RELOAD
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.RANGERS,
@@ -2362,36 +2354,31 @@ export const Careers: ICareer[] = [
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.ATTRACTIVE,
+        TALENTS.MIMIC,
+        TALENTS.PUBLIC_SPEAKER,
+        TALENTS.SUAVE
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.CONTORTIONIST,
+        TALENTS.JUMP_UP,
+        TALENTS.SHARPSHOOTER,
+        TALENTS.TRICK_RIDING
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.BLATHER,
+        TALENTS.MASTER_OF_DISGUISE,
+        TALENTS.PERFECT_PITCH,
+        TALENTS.READ_WRITE
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.DEALMAKER,
+        TALENTS.ETIQUETTE_ANY,
+        TALENTS.SEASONED_TRAVELLER,
+        TALENTS.SHARP
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.RANGERS,
@@ -2432,110 +2419,101 @@ export const Careers: ICareer[] = [
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.BERSERK_CHARGE,
+        TALENTS.FRENZY,
+        TALENTS.READ_WRITE,
+        TALENTS.STONE_SOUP
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.HARDY,
+        TALENTS.HATRED_HERETICS,
+        TALENTS.FLAGELLANT,
+        TALENTS.IMPLACABLE
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.FIELD_DRESSING,
+        TALENTS.FURIOUS_ASSAULT,
+        TALENTS.MENACING,
+        TALENTS.SEASONED_TRAVELLER
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.BATTLE_RAGE,
+        TALENTS.FEARLESS_HERETICS,
+        TALENTS.FRIGHTENING,
+        TALENTS.IMPASSIONED_ZEAL
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.RANGERS,
     name: CAREERS.MESSENGER,
-    limitations: [],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF, SPECIES.WOOD_ELF],
+    characteristics: [2, 0, 0, 1, 1, 1, 0, 0, 3, 4],
+    levels: ['runner', 'messenger', 'courier', 'courier-captain'],
+    status: [[STATUS.BRASS, 3], [STATUS.SILVER, 1], [STATUS.SILVER, 3], [STATUS.SILVER, 5]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.ATHLETICS,
+        SKILLS.CLIMB,
+        SKILLS.DODGE,
+        SKILLS.ENDURANCE,
+        SKILLS.GOSSIP,
+        SKILLS.NAVIGATION,
+        SKILLS.PERCEPTION,
+        SKILLS.MELEE_BRAWLING
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.ANIMAL_CARE,
+        SKILLS.CHARM,
+        SKILLS.COOL,
+        SKILLS.LORE_LOCAL,
+        SKILLS.MELEE_BASIC,
+        SKILLS.RIDE_HORSE
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.CHARM_ANIMAL,
+        SKILLS.BRIBERY,
+        SKILLS.CONSUME_ALCOHOL,
+        SKILLS.OUTDOOR_SURVIVAL
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.INTIMIDATE,
+        SKILLS.LEADERSHIP
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.FLEE,
+        TALENTS.FLEET_FOOTED,
+        TALENTS.SPRINTER,
+        TALENTS.STEP_ASIDE
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.CRACK_THE_WHIP,
+        TALENTS.CRIMINAL,
+        TALENTS.ORIENTATION,
+        TALENTS.SEASONED_TRAVELLER
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.NOSE_FOR_TROUBLE,
+        TALENTS.RELENTLESS,
+        TALENTS.TENACIOUS,
+        TALENTS.TRICK_RIDING
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.DEALMAKER,
+        TALENTS.HATRED_OUTLAWS,
+        TALENTS.KINGPIN,
+        TALENTS.VERY_RESILIENT
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.RANGERS,
     name: CAREERS.PEDLAR,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -2594,12 +2572,7 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.RANGERS,
@@ -2664,17 +2637,12 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.RANGERS,
     name: CAREERS.WITCH_HUNTER,
-    limitations: [],
+    limitations: [SPECIES.HUMAN],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -2733,17 +2701,12 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.RIVERFOLK,
     name: CAREERS.BOATMAN,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -2802,17 +2765,12 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.RIVERFOLK,
     name: CAREERS.HUFFER,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -2871,17 +2829,12 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.RIVERFOLK,
     name: CAREERS.RIVERWARDEN,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.HALFLING],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -2940,17 +2893,12 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.RIVERFOLK,
     name: CAREERS.RIVERWOMAN,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -3009,17 +2957,12 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.RIVERFOLK,
     name: CAREERS.SEAMAN,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -3078,17 +3021,12 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.RIVERFOLK,
     name: CAREERS.SMUGGLER,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -3147,17 +3085,12 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.RIVERFOLK,
     name: CAREERS.STEVEDORE,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -3216,17 +3149,12 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.RIVERFOLK,
     name: CAREERS.WRECKER,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.WOOD_ELF],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -3285,17 +3213,12 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.ROGUES,
     name: CAREERS.BAWD,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.HALFLING, SPECIES.HIGH_ELF],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -3354,17 +3277,12 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.ROGUES,
     name: CAREERS.CHARLATAN,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.HALFLING, SPECIES.HIGH_ELF],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -3423,17 +3341,12 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.ROGUES,
     name: CAREERS.FENCE,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -3492,17 +3405,12 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.ROGUES,
     name: CAREERS.GRAVE_ROBBER,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.HALFLING],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -3561,17 +3469,12 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.ROGUES,
     name: CAREERS.OUTLAW,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF, SPECIES.WOOD_ELF],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -3630,17 +3533,12 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.ROGUES,
     name: CAREERS.RACKETEER,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -3699,17 +3597,12 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.ROGUES,
     name: CAREERS.THIEF,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -3768,17 +3661,12 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.ROGUES,
     name: CAREERS.WITCH,
-    limitations: [],
+    limitations: [SPECIES.HUMAN],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -3837,12 +3725,7 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.WARRIORS,
@@ -3907,17 +3790,12 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.WARRIORS,
     name: CAREERS.GUARD,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF, SPECIES.WOOD_ELF],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -3976,12 +3854,7 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.WARRIORS,
@@ -4046,17 +3919,12 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.WARRIORS,
     name: CAREERS.PIT_FIGHTER,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF, SPECIES.WOOD_ELF],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -4115,17 +3983,12 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.WARRIORS,
     name: CAREERS.PROTAGONIST,
-    limitations: [],
+    limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HIGH_ELF],
     characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
     skills: [
@@ -4184,12 +4047,7 @@ export const Careers: ICareer[] = [
         TALENTS.
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.WARRIORS,
@@ -4254,12 +4112,7 @@ export const Careers: ICareer[] = [
         TALENTS.STOUT_HEARTED
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.WARRIORS,
@@ -4324,12 +4177,7 @@ export const Careers: ICareer[] = [
         TALENTS.VERY_STRONG
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   },
   {
     class: CLASSES.WARRIORS,
@@ -4394,11 +4242,6 @@ export const Careers: ICareer[] = [
         TALENTS.WAR_LEADER
       ]
     ],
-    trappings: [
-      [],
-      [],
-      [],
-      []
-    ]
+    trappings: [[], [], [], []]
   }
 ];
