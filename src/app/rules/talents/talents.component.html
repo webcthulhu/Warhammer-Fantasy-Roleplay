@@ -1,0 +1,12 @@
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let i of talents; trackBy: trackByFn;">
+    <mat-expansion-panel-header>
+      <mat-panel-title class="text-uppercase font-fell-english-sc">
+        {{ i.name }}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p><span class="text-bold m-r-8">Max:</span>{{ i.max }}</p>
+    <p *ngIf="i.test"><span class="text-bold m-r-8">Test:</span>{{ i.test }}</p>
+    <p><span class="text-bold m-r-8">Description:</span>{{ i.description }}</p>
+  </mat-expansion-panel>
+</mat-accordion>

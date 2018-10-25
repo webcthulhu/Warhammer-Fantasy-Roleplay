@@ -1,0 +1,48 @@
+<!-- Careers -->
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let career of careers; trackBy: trackByFn;">
+    <mat-expansion-panel-header>
+      <mat-panel-title class="text-uppercase font-fell-english-sc">
+        {{ career.name }}
+      </mat-panel-title>
+      <mat-panel-description class="text-capitalize font-fell-dw-pica">
+        {{ career.limitations | join:', ' }}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <!-- Character Advances Scheme -->
+    <h4>Character Advance Scheme</h4>
+    <table class="characteristics-advances">
+      <tr>
+        <th>WS</th><th>BS</th><th>S</th><th>T</th><th>I</th><th>Agi</th><th>Dex</th><th>Int</th><th>WP</th><th>Fel</th>
+      </tr>
+      <tr>
+        <td *ngFor="let i of career.characteristics">
+          <img *ngIf="i" class="chevron" [src]="'assets/images/chevron-' + i + '.png'">
+        </td>
+      </tr>
+    </table>
+    <!-- Levels: name, status, skills, talents, trappings -->
+    <h4>Career Path</h4>
+    <div *ngFor="let i of [0, 1, 2, 3];">
+      <p>
+        <img class="chevron" [src]="'assets/images/chevron-' + (i + 1) + '.png'">
+        <span class="text-capitalize">{{ career.levels[i] }}</span>
+        <span> - </span>
+        <span class="text-capitalize">{{ career.status[i] | join:' ' }}</span>
+      </p>
+      <p>
+        <span class="text-bold">Skills: </span>
+        <span class="text-capitalize">{{ career.skills[i] | join:', ' }}</span>
+      </p>
+      <p>
+        <span class="text-bold">Talents: </span>
+        <span class="text-capitalize">{{ career.talents[i] | join:', ' }}</span>
+      </p>
+      <p>
+        <span class="text-bold">Trappings: </span>
+        <span class="text-capitalize">{{ career.trappings[i] | join:', ' }}</span>
+      </p>
+    </div>
+
+  </mat-expansion-panel>
+</mat-accordion>

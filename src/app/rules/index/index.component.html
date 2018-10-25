@@ -1,0 +1,16 @@
+<aside>
+  <mat-nav-list>
+    <mat-list-item [class.selected]="section === 'careers'" (click)="section = 'careers'">Careers</mat-list-item>
+    <mat-list-item [class.selected]="section === 'conditions'" (click)="section = 'conditions'">Conditions</mat-list-item>
+    <mat-list-item [class.selected]="section === 'qualities'" (click)="section = 'qualities'">Qualities</mat-list-item>
+    <mat-list-item [class.selected]="section === 'skills'" (click)="section = 'skills'">Skills</mat-list-item>
+    <mat-list-item [class.selected]="section === 'talents'" (click)="section = 'talents'">Talents</mat-list-item>
+  </mat-nav-list>
+</aside>
+<main [ngSwitch]="section">
+  <app-careers *ngSwitchCase="'careers'"></app-careers>
+  <app-conditions *ngSwitchCase="'conditions'"></app-conditions>
+  <app-qualities *ngSwitchCase="'qualities'"></app-qualities>
+  <app-skills *ngSwitchCase="'skills'"></app-skills>
+  <app-talents *ngSwitchCase="'talents'"></app-talents>
+</main>

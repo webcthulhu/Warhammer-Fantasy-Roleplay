@@ -1,0 +1,19 @@
+@import '../../../variables';
+
+.characteristics-advances {
+  border: 1px solid $grey;
+  text-align: center;
+  tr {
+    th {
+      width: 20px;
+    }
+    td {
+    }
+  }
+}
+.chevron {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  vertical-align: middle;
+}

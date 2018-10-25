@@ -1,0 +1,13 @@
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let quality of qualities; trackBy: trackByFn;">
+    <mat-expansion-panel-header>
+      <mat-panel-title class="text-capitalize font-fell-english">
+        <span class="text-uppercase font-fell-english-sc m-r-8">
+          {{ quality.name }}
+        </span>
+        {{ quality.rating ? '(rating)' : '' }}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    {{ quality.description }}
+  </mat-expansion-panel>
+</mat-accordion>

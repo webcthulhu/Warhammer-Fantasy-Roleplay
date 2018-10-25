@@ -1,0 +1,32 @@
+@import '~@angular/material/theming';
+
+$general-typography: mat-typography-config(
+  $font-family: '"Catamaran", sans-serif'
+);
+
+@include mat-core($general-typography);
+
+// Define the default theme
+$default-primary: mat-palette($mat-red);
+$default-accent: mat-palette($mat-yellow);
+$default-warn: mat-palette($mat-red);
+$default-theme: mat-light-theme($default-primary, $default-accent, $default-warn);
+
+// Define an alternate theme
+$dark-primary: mat-palette($mat-pink);
+$dark-accent: mat-palette($mat-amber);
+$dark-warn: mat-palette($mat-red);
+$dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
+
+// Include the default theme
+@include angular-material-theme($default-theme);
+
+// Include the alternate themes
+.dark-theme {
+  @include angular-material-theme($dark-theme);
+}
+
+/* App style variables */
+$primary: mat-color($default-primary, 500);
+$accent: mat-color($default-accent, 500);
+$warn: mat-color($default-warn, 500);
