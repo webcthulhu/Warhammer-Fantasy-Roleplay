@@ -2775,62 +2775,63 @@ export const Careers: ICareer[] = [
     class: CLASSES.RIVERFOLK,
     name: CAREERS.HUFFER,
     limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    characteristics: [1, 0, 0, 1, 1, 0, 0, 3, 2, 4],
+    levels: ['riverguide', 'huffer', 'pilot', 'master pilot'],
+    status: [[STATUS.BRASS, 4], [STATUS.SILVER, 1], [STATUS.SILVER, 3], [STATUS.SILVER, 5]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.CONSUME_ALCOHOL,
+        SKILLS.GOSSIP,
+        SKILLS.INTUITION,
+        SKILLS.LORE_LOCAL,
+        SKILLS.LORE_RIVERWAYS,
+        SKILLS.PERCEPTION,
+        SKILLS.ROW,
+        SKILLS.SWIM
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.CHARM,
+        SKILLS.COOL,
+        SKILLS.ENTERTAIN_STORYTELLING,
+        SKILLS.LANGUAGE_ANY,
+        SKILLS.MELEE_BASIC,
+        SKILLS.NAVIGATION
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.HAGGLE,
+        SKILLS.INTIMIDATE,
+        SKILLS.LORE_LOCAL,
+        SKILLS.LORE_WRECKS
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.LEADERSHIP,
+        SKILLS.SAIL_ANY
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.FISHERMAN,
+        TALENTS.NIGHT_VISION,
+        TALENTS.ORIENTATION,
+        TALENTS.WATERMAN
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.DEALMAKER,
+        TALENTS.ETIQUETTE_GUILDER,
+        TALENTS.NOSE_FOR_TROUBLE,
+        TALENTS.RIVER_GUIDE
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.ACUTE_SENSE_SIGHT,
+        TALENTS.PILOT,
+        TALENTS.SEA_LEGS,
+        TALENTS.VERY_STRONG
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.SIXTH_SENSE,
+        TALENTS.SHARP,
+        TALENTS.STRONG_SWIMMER,
+        TALENTS.TENACIOUS
       ]
     ],
     trappings: [[], [], [], []]
@@ -2839,62 +2840,63 @@ export const Careers: ICareer[] = [
     class: CLASSES.RIVERFOLK,
     name: CAREERS.RIVERWARDEN,
     limitations: [SPECIES.HUMAN, SPECIES.HALFLING],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    characteristics: [2, 1, 1, 0, 3, 0, 0, 4, 0, 1],
+    levels: ['river recruit', 'riverwarden', 'shipsword', 'shipsword master'],
+    status: [[STATUS.SILVER, 1], [STATUS.SILVER, 2], [STATUS.SILVER, 4], [STATUS.GOLD, 1]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.ATHLETICS,
+        SKILLS.DODGE,
+        SKILLS.ENDURANCE,
+        SKILLS.MELEE_BASIC,
+        SKILLS.PERCEPTION,
+        SKILLS.ROW,
+        SKILLS.SAIL_ANY,
+        SKILLS.SWIM
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.BRIBERY,
+        SKILLS.CHARM,
+        SKILLS.INTIMIDATE,
+        SKILLS.GOSSIP,
+        SKILLS.LORE_RIVERWAYS,
+        SKILLS.RANGED_CROSSBOW
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.CLIMB,
+        SKILLS.COOL,
+        SKILLS.INTUITION,
+        SKILLS.LEADERSHIP
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.LORE_LAW,
+        SKILLS.NAVIGATION
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.STRONG_SWIMMER,
+        TALENTS.STRONG_BACK,
+        TALENTS.VERY_STRONG,
+        TALENTS.WATERMAN
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.CRIMINAL,
+        TALENTS.GUNNER,
+        TALENTS.FISHERMAN,
+        TALENTS.SEASONED_TRAVELLER
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.FEARLESS_WRECKERS,
+        TALENTS.HATRED_ANY,
+        TALENTS.PILOT,
+        TALENTS.SEA_LEGS
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.COMMANDING_PRESENCE,
+        TALENTS.KINGPIN,
+        TALENTS.MENACING,
+        TALENTS.ORIENTATION
       ]
     ],
     trappings: [[], [], [], []]
@@ -2903,62 +2905,63 @@ export const Careers: ICareer[] = [
     class: CLASSES.RIVERFOLK,
     name: CAREERS.RIVERWOMAN,
     limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    characteristics: [2, 0, 0, 1, 3, 1, 1, 0, 0, 1],
+    levels: ['greenfish', 'riverwoman', 'riverwise', 'river elder'],
+    status: [[STATUS.BRASS, 2], [STATUS.BRASS, 3], [STATUS.BRASS, 5], [STATUS.SILVER, 2]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.ATHLETICS,
+        SKILLS.CONSUME_ALCOHOL,
+        SKILLS.DODGE,
+        SKILLS.ENDURANCE,
+        SKILLS.GOSSIP,
+        SKILLS.OUTDOOR_SURVIVAL,
+        SKILLS.ROW,
+        SKILLS.SWIM
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.GAMBLE,
+        SKILLS.LORE_LOCAL,
+        SKILLS.LORE_RIVERWAYS,
+        SKILLS.RANGED_ENTANGLING,
+        SKILLS.RANGED_THROWN,
+        SKILLS.SET_TRAP
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.CHARM,
+        SKILLS.INTUITION,
+        SKILLS.MELEE_POLEARM,
+        SKILLS.PERCEPTION
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.ENTERTAIN_STORYTELLING,
+        SKILLS.LORE_FOLKLORE
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.FISHERMAN,
+        TALENTS.GREGARIOUS,
+        TALENTS.STRIDER_MARSHES,
+        TALENTS.STRONG_SWIMMER
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.CRAFTSMAN_BOATBUILDER,
+        TALENTS.ROVER,
+        TALENTS.STRONG_BACK,
+        TALENTS.WATERMAN
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.SAVANT_RIVERWAYS,
+        TALENTS.STOUT_HEARTED,
+        TALENTS.TENACIOUS,
+        TALENTS.VERY_STRONG
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.MASTER_TRADESMAN_BOATBUILDER,
+        TALENTS.PUBLIC_SPEAKER,
+        TALENTS.SHARP,
+        TALENTS.STRONG_MINDED
       ]
     ],
     trappings: [[], [], [], []]
@@ -2967,62 +2970,63 @@ export const Careers: ICareer[] = [
     class: CLASSES.RIVERFOLK,
     name: CAREERS.SEAMAN,
     limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    characteristics: [2, 0, 0, 0, 3, 1, 1, 4, 0, 1],
+    levels: ['landsman', 'seaman', 'boatswain', 'ship\'s master'],
+    status: [[STATUS.SILVER, 1], [STATUS.SILVER, 3], [STATUS.SILVER, 5], [STATUS.GOLD, 2]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.CLIMB,
+        SKILLS.CONSUME_ALCOHOL,
+        SKILLS.GAMBLE,
+        SKILLS.GOSSIP,
+        SKILLS.ROW,
+        SKILLS.MELEE_BRAWLING,
+        SKILLS.SAIL_ANY,
+        SKILLS.SWIM
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.ATHLETICS,
+        SKILLS.DODGE,
+        SKILLS.ENDURANCE,
+        SKILLS.ENTERTAIN_SINGING,
+        SKILLS.LANGUAGE_ANY,
+        SKILLS.MELEE_BASIC
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.COOL,
+        SKILLS.LEADERSHIP,
+        SKILLS.PERCEPTION,
+        SKILLS.TRADE_CARPENTER
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.CHARM,
+        SKILLS.NAVIGATION
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.FISHERMAN,
+        TALENTS.STRIDER_COASTAL,
+        TALENTS.STRONG_BACK,
+        TALENTS.STRONG_SWIMMER
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.CATFALL,
+        TALENTS.SEA_LEGS,
+        TALENTS.SEASONED_TRAVELLER,
+        TALENTS.STRONG_LEGS
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.OLD_SALT,
+        TALENTS.STRIKE_MIGHTY_BLOW,
+        TALENTS.TENACIOUS,
+        TALENTS.VERY_STRONG
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.ORIENTATION,
+        TALENTS.PILOT,
+        TALENTS.PUBLIC_SPEAKER,
+        TALENTS.SAVVY
       ]
     ],
     trappings: [[], [], [], []]
@@ -3031,62 +3035,64 @@ export const Careers: ICareer[] = [
     class: CLASSES.RIVERFOLK,
     name: CAREERS.SMUGGLER,
     limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    characteristics: [0, 0, 0, 0, 2, 1, 1, 3, 1, 4],
+    levels: ['river runner', 'smuggler', 'master smuggler', 'smuggler king'],
+    status: [[STATUS.BRASS, 2], [STATUS.BRASS, 3], [STATUS.BRASS, 5], [STATUS.SILVER, 2]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.ATHLETICS,
+        SKILLS.BRIBERY,
+        SKILLS.COOL,
+        SKILLS.CONSUME_ALCOHOL,
+        SKILLS.ROW,
+        SKILLS.SAIL_ANY,
+        [SKILLS.STEALTH_RURAL, SKILLS.STEALTH_URBAN].join(' or '),
+        SKILLS.SWIM
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.HAGGLE,
+        SKILLS.CHARM,
+        SKILLS.GOSSIP,
+        SKILLS.LORE_LOCAL,
+        SKILLS.MELEE_BASIC,
+        SKILLS.PERCEPTION,
+        SKILLS.SECRET_SIGNS_SMUGGLER
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.EVALUATE,
+        SKILLS.INTIMIDATE,
+        SKILLS.INTUITION,
+        SKILLS.LORE_RIVERWAYS
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.LANGUAGE_ANY,
+        SKILLS.LEADERSHIP
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.CRIMINAL,
+        TALENTS.FISHERMAN,
+        TALENTS.STRIDER_MARSHES,
+        TALENTS.STRONG_BACK
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.DEALMAKER,
+        TALENTS.ETIQUETTE_CRIMINALS,
+        TALENTS.WATERMAN,
+        TALENTS.VERY_STRONG
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.BRIBER,
+        TALENTS.FEARLESS_RIVERWARDENS,
+        TALENTS.PILOT,
+        TALENTS.STRONG_SWIMMER
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.KINGPIN,
+        TALENTS.SAVVY,
+        TALENTS.STRIDER_COASTAL,
+        TALENTS.SEA_LEGS
       ]
     ],
     trappings: [[], [], [], []]
@@ -3095,62 +3101,63 @@ export const Careers: ICareer[] = [
     class: CLASSES.RIVERFOLK,
     name: CAREERS.STEVEDORE,
     limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    characteristics: [1, 0, 2, 1, 1, 0, 0, 4, 3, 0],
+    levels: ['dockhand', 'stevedore', 'foreman', 'dock master'],
+    status: [[STATUS.BRASS, 3], [STATUS.SILVER, 1], [STATUS.SILVER, 3], [STATUS.SILVER, 5]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.ATHLETICS,
+        SKILLS.CLIMB,
+        SKILLS.CONSUME_ALCOHOL,
+        SKILLS.DODGE,
+        SKILLS.ENDURANCE,
+        SKILLS.GOSSIP,
+        SKILLS.MELEE_BASIC,
+        SKILLS.SWIM
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.BRIBERY,
+        SKILLS.ENTERTAIN_STORYTELLING,
+        SKILLS.GAMBLE,
+        SKILLS.INTIMIDATE,
+        SKILLS.PERCEPTION,
+        SKILLS.STEALTH_URBAN
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.COOL,
+        SKILLS.EVALUATE,
+        SKILLS.INTUITION,
+        SKILLS.LEADERSHIP
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.CHARM,
+        SKILLS.LORE_TAXES
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.DIRTY_FIGHTING,
+        TALENTS.STRONG_BACK,
+        TALENTS.STURDY,
+        TALENTS.VERY_STRONG
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.CRIMINAL,
+        TALENTS.ETIQUETTE_GUILDER,
+        TALENTS.STRONG_LEGS,
+        TALENTS.TENACIOUS
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.DEALMAKER,
+        TALENTS.EMBEZZLE,
+        TALENTS.ETIQUETTE_CRIMINALS,
+        TALENTS.PUBLIC_SPEAKER
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.KINGPIN,
+        TALENTS.MENACING,
+        TALENTS.NUMISMATICS,
+        TALENTS.READ_WRITE
       ]
     ],
     trappings: [[], [], [], []]
@@ -3159,62 +3166,63 @@ export const Careers: ICareer[] = [
     class: CLASSES.RIVERFOLK,
     name: CAREERS.WRECKER,
     limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.WOOD_ELF],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    characteristics: [1, 3, 1, 0, 1, 0, 0, 0, 2, 4],
+    levels: ['cargo scavenger', 'wrecker', 'river pirate', 'wrecker captain'],
+    status: [[STATUS.BRASS, 2], [STATUS.BRASS, 3], [STATUS.BRASS, 5], [STATUS.SILVER, 2]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.CLIMB,
+        SKILLS.CONSUME_ALCOHOL,
+        SKILLS.DODGE,
+        SKILLS.ENDURANCE,
+        SKILLS.ROW,
+        SKILLS.MELEE_BASIC,
+        SKILLS.OUTDOOR_SURVIVAL,
+        SKILLS.SWIM
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.BRIBERY,
+        SKILLS.COOL,
+        SKILLS.INTUITION,
+        SKILLS.NAVIGATION,
+        SKILLS.PERCEPTION,
+        SKILLS.SET_TRAP
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.GOSSIP,
+        SKILLS.INTIMIDATE,
+        SKILLS.RANGED_CROSSBOW,
+        SKILLS.STEALTH_RURAL
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.LEADERSHIP,
+        SKILLS.LORE_RIVERWAYS
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.BREAK_AND_ENTER,
+        TALENTS.CRIMINAL,
+        TALENTS.FISHERMAN,
+        TALENTS.STRONG_BACK
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.FLEE,
+        TALENTS.ROVER,
+        TALENTS.STRONG_SWIMMER,
+        TALENTS.TRAPPER
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.DIRTY_FIGHTING,
+        TALENTS.ETIQUETTE_CRIMINALS,
+        TALENTS.MENACING,
+        TALENTS.WATERMAN
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.FURIOUS_ASSAULT,
+        TALENTS.IN_FIGHTER,
+        TALENTS.PILOT,
+        TALENTS.WARRIOR_BORN
       ]
     ],
     trappings: [[], [], [], []]
@@ -3223,14 +3231,15 @@ export const Careers: ICareer[] = [
     class: CLASSES.ROGUES,
     name: CAREERS.BAWD,
     limitations: [SPECIES.HUMAN, SPECIES.HALFLING, SPECIES.HIGH_ELF],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    characteristics: [0, 0, 0, 0, 2, 1, 1, 4, 3, 1],
+    levels: ['hustler', 'bawd', 'procurer', 'ringleader'],
+    status: [[STATUS.BRASS, 1], [STATUS.BRASS, 3], [STATUS.SILVER, 1], [STATUS.SILVER, 3]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
+        SKILLS.BRIBERY,
+        SKILLS.CHARM,
+        SKILLS.CONSUME_ALCOHOL,
+        SKILLS.ENTERTAIN_ANY,
         SKILLS.,
         SKILLS.,
         SKILLS.,
