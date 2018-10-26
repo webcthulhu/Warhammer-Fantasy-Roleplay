@@ -90,6 +90,7 @@ export enum TALENTS {
   FEARLESS_RATS = 'fearless (rats)',
   FEARLESS_SKAVEN = 'fearless (skaven)',
   FEARLESS_WATCHMEN = 'fearless (watchmen)',
+  FEARLESS_WITCHES = 'fearless (witches)',
   FEINT = 'feint',
   FIELD_DRESSING = 'field dressing',
   FISHERMAN = 'fisherman',
