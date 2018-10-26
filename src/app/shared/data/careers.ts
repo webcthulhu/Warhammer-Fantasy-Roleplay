@@ -3240,54 +3240,54 @@ export const Careers: ICareer[] = [
         SKILLS.CHARM,
         SKILLS.CONSUME_ALCOHOL,
         SKILLS.ENTERTAIN_ANY,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.GAMBLE,
+        SKILLS.GOSSIP,
+        SKILLS.HAGGLE,
+        SKILLS.INTIMIDATE
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.DODGE,
+        SKILLS.ENDURANCE,
+        SKILLS.INTUITION,
+        SKILLS.LORE_LOCAL,
+        SKILLS.MELEE_BASIC,
+        SKILLS.PERCEPTION
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.COOL,
+        SKILLS.EVALUATE,
+        SKILLS.LANGUAGE_ANY,
+        SKILLS.LORE_LAW
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.LEADERSHIP,
+        SKILLS.LORE_HERALDRY
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.ATTRACTIVE,
+        TALENTS.ALLEY_CAT,
+        TALENTS.BLATHER,
+        TALENTS.GREGARIOUS
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.AMBIDEXTROUS,
+        TALENTS.CAROUSER,
+        TALENTS.CRIMINAL,
+        TALENTS.RESISTANCE_DISEASE
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.DEALMAKER,
+        TALENTS.EMBEZZLE,
+        TALENTS.ETIQUETTE_ANY,
+        TALENTS.SUAVE
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.BRIBER,
+        TALENTS.KINGPIN,
+        TALENTS.NUMISMATICS,
+        TALENTS.SAVVY
       ]
     ],
     trappings: [[], [], [], []]
@@ -3296,62 +3296,63 @@ export const Careers: ICareer[] = [
     class: CLASSES.ROGUES,
     name: CAREERS.CHARLATAN,
     limitations: [SPECIES.HUMAN, SPECIES.HALFLING, SPECIES.HIGH_ELF],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    characteristics: [0, 0, 0, 0, 1, 3, 1, 4, 2, 1],
+    levels: ['swindler', 'charlatan', 'con artist', 'scoundrel'],
+    status: [[STATUS.BRASS, 3], [STATUS.BRASS, 5], [STATUS.SILVER, 2], [STATUS.SILVER, 4]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.BRIBERY,
+        SKILLS.CONSUME_ALCOHOL,
+        SKILLS.CHARM,
+        SKILLS.ENTERTAIN_STORYTELLING,
+        SKILLS.GAMBLE,
+        SKILLS.GOSSIP,
+        SKILLS.HAGGLE,
+        SKILLS.SLEIGHT_OF_HAND
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.COOL,
+        SKILLS.DODGE,
+        SKILLS.ENTERTAIN_ACTING,
+        SKILLS.EVALUATE,
+        SKILLS.INTUITION,
+        SKILLS.PERCEPTION
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.LANGUAGE_THIEF,
+        SKILLS.LORE_HERALDRY,
+        SKILLS.PICK_LOCK,
+        SKILLS.SECRET_SIGNS_THIEF
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.LORE_GENEALOGY,
+        SKILLS.RESEARCH
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.CARDSHARP,
+        TALENTS.DICEMAN,
+        TALENTS.ETIQUETTE_ANY,
+        TALENTS.LUCK
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.BLATHER,
+        TALENTS.CRIMINAL,
+        TALENTS.FAST_HANDS,
+        TALENTS.SECRET_IDENTITY
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.ATTRACTIVE,
+        TALENTS.CAT_TONGUED,
+        TALENTS.DEALMAKER,
+        TALENTS.READ_WRITE
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.GREGARIOUS,
+        TALENTS.MASTER_OF_DISGUISE,
+        TALENTS.NOSE_FOR_TROUBLE,
+        TALENTS.SUAVE
       ]
     ],
     trappings: [[], [], [], []]
@@ -3360,62 +3361,63 @@ export const Careers: ICareer[] = [
     class: CLASSES.ROGUES,
     name: CAREERS.FENCE,
     limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    characteristics: [0, 0, 0, 0, 1, 1, 2, 3, 4, 1],
+    levels: ['broker', 'fence', 'master fence', 'black marketeer'],
+    status: [[STATUS.SILVER, 1], [STATUS.SILVER, 2], [STATUS.SILVER, 3], [STATUS.SILVER, 4]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.CHARM,
+        SKILLS.CONSUME_ALCOHOL,
+        SKILLS.DODGE,
+        SKILLS.EVALUATE,
+        SKILLS.GAMBLE,
+        SKILLS.GOSSIP,
+        SKILLS.HAGGLE,
+        SKILLS.MELEE_BASIC
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.COOL,
+        SKILLS.INTIMIDATE,
+        SKILLS.INTUITION,
+        SKILLS.PERCEPTION,
+        SKILLS.SECRET_SIGNS_THIEF,
+        SKILLS.TRADE_ENGRAVER
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.BRIBERY,
+        SKILLS.ENTERTAIN_STORYTELLING,
+        SKILLS.LORE_ART,
+        SKILLS.LORE_LOCAL
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.LORE_HERALDRY,
+        SKILLS.RESEARCH
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.ALLEY_CAT,
+        TALENTS.CARDSHARP,
+        TALENTS.DEALMAKER,
+        TALENTS.GREGARIOUS
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.CRIMINAL,
+        TALENTS.ETIQUETTE_CRIMINALS,
+        TALENTS.NUMISMATICS,
+        TALENTS.SAVVY
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.KINGPIN,
+        TALENTS.STRIKE_TO_STUN,
+        TALENTS.SUAVE,
+        TALENTS.SUPER_NUMERATE
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.DIRTY_FIGHTING,
+        TALENTS.IRON_WILL,
+        TALENTS.MENACING,
+        TALENTS.BRIBER
       ]
     ],
     trappings: [[], [], [], []]
@@ -3424,62 +3426,63 @@ export const Careers: ICareer[] = [
     class: CLASSES.ROGUES,
     name: CAREERS.GRAVE_ROBBER,
     limitations: [SPECIES.HUMAN, SPECIES.HALFLING],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    characteristics: [2, 0, 1, 0, 1, 0, 3, 4, 1, 0],
+    levels: ['body snatcher', 'grave robber', 'tomb robber', 'treasure hunter'],
+    status: [[STATUS.BRASS, 2], [STATUS.BRASS, 3], [STATUS.SILVER, 1], [STATUS.SILVER, 5]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.CLIMB,
+        SKILLS.COOL,
+        SKILLS.DODGE,
+        SKILLS.ENDURANCE,
+        SKILLS.GOSSIP,
+        SKILLS.INTUITION,
+        SKILLS.PERCEPTION,
+        SKILLS.STEALTH_ANY
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.BRIBERY,
+        SKILLS.ENDURANCE,
+        SKILLS.EVALUATE,
+        SKILLS.HAGGLE,
+        SKILLS.LORE_MEDICINE,
+        SKILLS.MELEE_BASIC
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.DRIVE,
+        SKILLS.LORE_HISTORY,
+        SKILLS.PICK_LOCK,
+        SKILLS.SET_TRAP
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.NAVIGATION,
+        SKILLS.TRADE_ENGINEER
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.ALLEY_CAT,
+        TALENTS.CRIMINAL,
+        TALENTS.FLEE,
+        TALENTS.STRONG_BACK
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.BREAK_AND_ENTER,
+        TALENTS.NIGHT_VISION,
+        TALENTS.RESISTANCE_DISEASE,
+        TALENTS.VERY_STRONG
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.READ_WRITE,
+        TALENTS.STRIKE_MIGHTY_BLOW,
+        TALENTS.TENACIOUS,
+        TALENTS.TUNNEL_RAT
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.FEARLESS_UNDEAD,
+        TALENTS.SIXTH_SENSE,
+        TALENTS.STRONG_MINDED,
+        TALENTS.TRAPPER
       ]
     ],
     trappings: [[], [], [], []]
@@ -3488,62 +3491,63 @@ export const Careers: ICareer[] = [
     class: CLASSES.ROGUES,
     name: CAREERS.OUTLAW,
     limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF, SPECIES.WOOD_ELF],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    characteristics: [1, 2, 1, 1, 3, 0, 0, 0, 0, 4],
+    levels: ['brigand', 'outlaw', 'outlaw chief', 'bandit king'],
+    status: [[STATUS.BRASS, 1], [STATUS.BRASS, 2], [STATUS.BRASS, 4], [STATUS.SILVER, 2]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.ATHLETICS,
+        SKILLS.CONSUME_ALCOHOL,
+        SKILLS.COOL,
+        SKILLS.ENDURANCE,
+        SKILLS.GAMBLE,
+        SKILLS.INTIMIDATE,
+        SKILLS.MELEE_BASIC,
+        SKILLS.OUTDOOR_SURVIVAL
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.DODGE,
+        SKILLS.HEAL,
+        SKILLS.LORE_LOCAL,
+        SKILLS.PERCEPTION,
+        SKILLS.RANGED_BOW,
+        SKILLS.STEALTH_RURAL
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.GOSSIP,
+        SKILLS.INTUITION,
+        SKILLS.LEADERSHIP,
+        SKILLS.RIDE_HORSE
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.CHARM,
+        SKILLS.LORE_EMPIRE
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.COMBAT_AWARE,
+        TALENTS.CRIMINAL,
+        TALENTS.ROVER,
+        TALENTS.FLEE
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.DIRTY_FIGHTING,
+        TALENTS.MARKSMAN,
+        TALENTS.STRIKE_TO_STUN,
+        TALENTS.TRAPPER
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.RAPID_RELOAD,
+        TALENTS.ROUGHRIDER,
+        TALENTS.MENACING,
+        TALENTS.VERY_RESILIENT
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.DEADEYE_SHOT,
+        TALENTS.FEARLESS_ROAD_WARDENS,
+        TALENTS.IRON_WILL,
+        TALENTS.ROBUST
       ]
     ],
     trappings: [[], [], [], []]
@@ -3552,62 +3556,64 @@ export const Careers: ICareer[] = [
     class: CLASSES.ROGUES,
     name: CAREERS.RACKETEER,
     limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    characteristics: [1, 0, 1, 1, 0, 0, 0, 4, 3, 2],
+    levels: ['thug', 'racketeer', 'gang boss', 'crime lord'],
+    status: [[STATUS.BRASS, 3], [STATUS.BRASS, 5], [STATUS.SILVER, 3], [STATUS.SILVER, 5]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.CONSUME_ALCOHOL,
+        SKILLS.COOL,
+        SKILLS.DODGE,
+        SKILLS.ENDURANCE,
+        SKILLS.INTIMIDATE,
+        SKILLS.LORE_LOCAL,
+        SKILLS.MELEE_BRAWLING,
+        SKILLS.STEALTH_URBAN
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.BRIBERY,
+        SKILLS.CHARM,
+        SKILLS.EVALUATE,
+        SKILLS.GOSSIP,
+        [SKILLS.LANGUAGE_ESTALIAN, SKILLS.LANGUAGE_TILEAN].join(' or '),
+        SKILLS.MELEE_BASIC
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.INTUITION,
+        SKILLS.LEADERSHIP,
+        SKILLS.PERCEPTION,
+        SKILLS.RANGED_CROSSBOW
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.LORE_LAW,
+        SKILLS.LORE_POLITICS
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.CRIMINAL,
+        TALENTS.ETIQUETTE_CRIMINALS,
+        TALENTS.MENACING,
+        TALENTS.STRIKE_MIGHTY_BLOW
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.EMBEZZLE,
+        /* Street fighting? */
+        TALENTS.IN_FIGHTER,
+        TALENTS.STRIKE_TO_STUN,
+        TALENTS.WARRIOR_BORN
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.FEARLESS_WATCHMEN,
+        TALENTS.IRON_WILL,
+        TALENTS.RESISTANCE_POISON,
+        TALENTS.ROBUST
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.COMMANDING_PRESENCE,
+        TALENTS.KINGPIN,
+        TALENTS.FRIGHTENING,
+        TALENTS.WEALTHY
       ]
     ],
     trappings: [[], [], [], []]
@@ -3616,62 +3622,63 @@ export const Careers: ICareer[] = [
     class: CLASSES.ROGUES,
     name: CAREERS.THIEF,
     limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    characteristics: [0, 0, 3, 0, 1, 1, 2, 0, 1, 4],
+    levels: ['prowler', 'thief', 'master thief', 'cat burglar'],
+    status: [[STATUS.BRASS, 1], [STATUS.BRASS, 3], [STATUS.BRASS, 5], [STATUS.SILVER, 3]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.ATHLETICS,
+        SKILLS.CLIMB,
+        SKILLS.COOL,
+        SKILLS.DODGE,
+        SKILLS.ENDURANCE,
+        SKILLS.INTUITION,
+        SKILLS.PERCEPTION,
+        SKILLS.STEALTH_URBAN
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.EVALUATE,
+        SKILLS.GOSSIP,
+        SKILLS.LORE_LOCAL,
+        SKILLS.PICK_LOCK,
+        SKILLS.SECRET_SIGNS_THIEF,
+        SKILLS.SLEIGHT_OF_HAND
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.BRIBERY,
+        SKILLS.GAMBLE,
+        SKILLS.INTIMIDATE,
+        SKILLS.RANGED_CROSSBOW
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.CHARM,
+        SKILLS.SET_TRAP
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.ALLEY_CAT,
+        TALENTS.CRIMINAL,
+        TALENTS.FLEE,
+        TALENTS.STRIKE_TO_STUN
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.BREAK_AND_ENTER,
+        TALENTS.ETIQUETTE_CRIMINALS,
+        TALENTS.FAST_HANDS,
+        TALENTS.SHADOW
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.NIGHT_VISION,
+        TALENTS.NIMBLE_FINGERED,
+        TALENTS.STEP_ASIDE,
+        TALENTS.TRAPPER
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.CATFALL,
+        TALENTS.SCALE_SHEER_SURFACE,
+        TALENTS.STRONG_LEGS,
+        TALENTS.WEALTHY
       ]
     ],
     trappings: [[], [], [], []]
@@ -3680,62 +3687,63 @@ export const Careers: ICareer[] = [
     class: CLASSES.ROGUES,
     name: CAREERS.WITCH,
     limitations: [SPECIES.HUMAN],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    characteristics: [1, 0, 0, 1, 2, 0, 0, 4, 1, 3],
+    levels: ['hexer', 'witch', 'wyrd', 'warlock'],
+    status: [[STATUS.BRASS, 1], [STATUS.BRASS, 2], [STATUS.BRASS, 3], [STATUS.BRASS, 5]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.CHANNELLING_ANY,
+        SKILLS.COOL,
+        SKILLS.ENDURANCE,
+        SKILLS.GOSSIP,
+        SKILLS.INTIMIDATE,
+        SKILLS.LANGUAGE_MAGICK,
+        SKILLS.SLEIGHT_OF_HAND,
+        SKILLS.STEALTH_RURAL
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.CHARM_ANIMAL,
+        SKILLS.DODGE,
+        SKILLS.INTUITION,
+        SKILLS.MELEE_POLEARM,
+        SKILLS.PERCEPTION,
+        SKILLS.TRADE_HERBALIST
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.BRIBERY,
+        SKILLS.CHARM,
+        SKILLS.HAGGLE,
+        SKILLS.LORE_DARK_MAGIC
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.LORE_DAEMONOLOGY,
+        SKILLS.LORE_MAGIC
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.CRIMINAL,
+        TALENTS.INSTINCTIVE_DICTION,
+        TALENTS.MENACING,
+        TALENTS.PETTY_MAGIC
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.ARCANE_MAGIC_WITCHERY,
+        TALENTS.ATTRACTIVE,
+        TALENTS.SIXTH_SENSE,
+        TALENTS.WITCH
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.ANIMAL_AFFINITY,
+        TALENTS.FAST_HANDS,
+        TALENTS.FRIGHTENING,
+        TALENTS.MAGICAL_SENSE
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.AETHYRIC_ATTUNEMENT,
+        TALENTS.LUCK,
+        TALENTS.STRONG_MINDED,
+        TALENTS.VERY_RESILIENT
       ]
     ],
     trappings: [[], [], [], []]
