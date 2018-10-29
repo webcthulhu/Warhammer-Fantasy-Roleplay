@@ -1,7 +1,7 @@
 export interface ITalent {
   name: string;
-  max?: string;
-  test?: string;
+  max: string;
+  test: string;
   description?: string;
 }
 
@@ -250,7 +250,7 @@ export const Talents: ITalent[] = [
   {
     name: TALENTS.ACCURATE_SHOT,
     max: 'Ballistic Skill Bonus',
-    test: '',
+    test: null,
     description: 'You are an exceptional shot and know where to shoot an enemy in order to inflict maximum damage. You deal your Accurate Shot level in extra Damage with all ranged weapons.'
   },
   {
@@ -274,7 +274,7 @@ export const Talents: ITalent[] = [
   {
     name: TALENTS.AMBIDEXTROUS,
     max: '2',
-    test: '',
+    test: null,
     description: 'You can use your off-hand far better than most folk, either by training or innate talent. You only suffer a penalty of –10 to Tests relying solely on your secondary hand, not –20. If you have this Talent twice, you suffer no penalty at all.'
   },
   {
@@ -286,7 +286,7 @@ export const Talents: ITalent[] = [
   {
     name: TALENTS.ARCANE_MAGIC,
     max: '1',
-    test: '',
+    test: null,
     description: 'You either study one of the 8 Arcane Lores of Magic — Beasts, Death, Fire, Heavens, Metal, Shadow, Light, or Life — or practice a lesser known Lore, such as Hedgecraft or Necromancy. You may now memorise spells from your chosen Lore for the following cost in XP.\nNumber of Spells Currently Known XP Cost for a new spell\nIntelligence Bonus × 1 100 XP\nIntelligence Bonus × 2 200 XP\nIntelligence Bonus × 3 300 XP\nIntelligence Bonus × 4 400 XP\n...and so on.\nSo, if your Intelligence Bonus is 4, it will cost you 100 XP for the first 4 spells, then 200 XP for the next 4, and so on. Full rules for learning new spells are provided in Chapter 8: Magic. Under normal circumstances, you may not learn more than one Arcane Magic (Lore) Talent. Further, you may not learn the Bless or Invoke Talents when you have the Arcane Magic Talent. You can unlearn this Talent for 100 XP, but will immediately lose all of your spells if you do so.'
   },
   {
@@ -340,7 +340,7 @@ export const Talents: ITalent[] = [
   {
     name: TALENTS.BLESS,
     max: '1',
-    test: '',
+    test: null,
     description: 'You are watched over by one of the Gods and can empower simple prayers. You can now deploy the Blessings of your deity as listed in Chapter 7: Religion and Belief. Under normal circumstances, you may only ever know one Divine Lore for the Bless Talent.'
   },
   {
@@ -370,7 +370,7 @@ export const Talents: ITalent[] = [
   {
     name: TALENTS.CAREFUL_STRIKE,
     max: 'Initiative Bonus',
-    test: '',
+    test: null,
     description: 'You are skilled at hitting your enemy exactly where you want to, either at range or in melee. You may modify your Hit Location result by up to +/–10 per time you have this Talent. So, if you had this Talent twice and hit location 34, the Right Arm, you could modify this down to 14, the Left Arm, or up to 54, the Body (see page 159).'
   },
   {
@@ -394,7 +394,7 @@ export const Talents: ITalent[] = [
   {
     name: TALENTS.CHAOS_MAGIC,
     max: 'Number of Spells available in chosen Chaos Magic Lore',
-    test: '',
+    test: null,
     description: 'By accident or design you have lost a portion of your soul to one of the Dark Gods, and can now practice the foul magics of Chaos. Your ruinous patron immediately grants you access to a single spell from the chosen Lore (most commonly the Nurgle, Slaanesh, or Tzeentch Lores) and you gain a Corruption point as the spell infiltrates your mind, never to be forgotten. Each time you take this Talent, which always costs 100 XP per time instead of the normal cost, you learn another spell from your chosen Lore and gain a Corruption point. For more about the available spells, see Chapter 8: Magic. Under normal circumstances, you may only ever know one Lore of Chaos Magic.'
   },
   {
@@ -406,13 +406,13 @@ export const Talents: ITalent[] = [
   {
     name: TALENTS.COMBAT_MASTER,
     max: 'Agility Bonus',
-    test: '',
+    test: null,
     description: 'Your accumulated years of combat experience allow you to keep lesser fighters at bay. For each level in this Talent, you count as one more person for the purposes of determining if one side out-numbers the other. This Talent only comes into play when you are out-numbered. See page 162 for the rules for out-numbering.'
   },
   {
     name: TALENTS.COMBAT_REFLEXES,
     max: 'Initiative Bonus',
-    test: '',
+    test: null,
     description: 'You react like a flash of lightning. Add 10 to your Initiative for each level in this Talent when determining Combat Initiative.'
   },
   {
@@ -436,7 +436,7 @@ export const Talents: ITalent[] = [
   {
     name: TALENTS.COOLHEADED,
     max: '1',
-    test: '',
+    test: null,
     description: 'You gain a permanent +5 bonus to your starting Willpower Characteristic this does not count towards your Advances.'
   },
   {
@@ -454,13 +454,13 @@ export const Talents: ITalent[] = [
   {
     name: TALENTS.CRIMINAL,
     max: 'None',
-    test: '',
+    test: null,
     description: 'You are an active criminal making money from illegal sources, and you’re not always quiet about it. For the purposes of securing money, either when Earning during play or performing an Income Endeavour, refer to the following table:\nCareer level Bonus Money per time the Talent is taken\n1 +2d10 brass pennies\n2 +1d10 silver shillings\n3 +2d10 silver shillings\n4 +1 gold crown\nBecause of your obvious criminal nature, others consider you lower Status than them unless they also have the Criminal Talent, where Status is compared as normal — perhaps you have gang tattoos, look shifty, or are just rough around the edges, it’s your choice. Because of this, local law enforcers are always suspicious of you and suspect your motivations, which only gets worse the more times you have this Talent, with the exact implications determined by the GM. Lawbreakers without the Criminal Talent earn significantly less coin but are not obviously the sort to be breaking the law, so maintain their Status. With GM consent, you may spend XP to remove levels of the Criminal Talent for the same XP it cost to buy.'
   },
   {
     name: TALENTS.DEADEYE_SHOT,
     max: '1',
-    test: '',
+    test: null,
     description: 'You always hit an opponent right between the eyes… or wherever else you intended to hit. Instead of reversing the dice to determine which Hit Location is struck with your ranged weapons, you may pick a location.'
   },
   {
@@ -502,7 +502,7 @@ export const Talents: ITalent[] = [
   {
     name: TALENTS.DOOMED,
     max: '1',
-    test: '',
+    test: null,
     description: 'At the age of 10, a Priest of Morr called a Doomsayer took you aside to foretell your death in an incense-laden, coming-of-age ritual called the Dooming. In conjunction with your GM, come up with a suitable Dooming. Should your character die in a fashion that matches your Dooming, your next character gains a bonus of half the total XP your dead character accrued during play.'
   },
   {
@@ -586,19 +586,19 @@ export const Talents: ITalent[] = [
   {
     name: TALENTS.FLEET_FOOTED,
     max: '1',
-    test: '',
+    test: null,
     description: 'You gain +1 to your Movement Attribute.'
   },
   {
     name: TALENTS.FRENZY,
     max: '1',
-    test: '',
+    test: null,
     description: 'You can Frenzy as described on page 190.'
   },
   {
     name: TALENTS.FRIGHTENING,
     max: 'Strength Bonus',
-    test: '',
+    test: null,
     description: 'Anyone sane thinks twice before approaching you. If you wish, you have a Fear Rating of 1 (see page 190). Add +1 to this number per extra time you have this Talent.'
   },
   {
@@ -862,19 +862,19 @@ export const Talents: ITalent[] = [
   {
     name: TALENTS.PUBLIC_SPEAKER,
     max: 'Fellowship Bonus',
-    test: '',
+    test: null,
     description: 'You are a skilled orator and know how to work large groups of people. Refer to the following table to see how many people you can now influence with your Charm Skill (see page 120) when Public Speaking.\nTalent Taken Number influenced\n1 As normal × 5\n2 As normal × 10\n3 As normal × 20\n4 As normal × 50\n5 As normal × 100\n6 As normal × 200\n7 As normal × 500\n8 As normal × 1000\n9 All who can hear your golden voice'
   },
   {
     name: TALENTS.PURE_SOUL,
     max: 'Willpower Bonus',
-    test: '',
+    test: null,
     description: 'Your soul is pure, quite resistant to the depredations of Chaos. You may gain extra Corruption points equal to your level of Pure Soul before having to Test to see if you become corrupt.'
   },
   {
     name: TALENTS.RAPID_RELOAD,
     max: 'Dexterity Bonus',
-    test: '',
+    test: null,
     description: 'You can reload ranged weapons with practiced ease. You add SL equal to your level in Rapid Reload to any Test to reload a ranged weapon.'
   },
   {
@@ -1000,7 +1000,7 @@ export const Talents: ITalent[] = [
   {
     name: TALENTS.SHARP,
     max: '1',
-    test: '',
+    test: null,
     description: 'You gain a permanent +5 bonus to your starting Initiative Characteristic (this does not count towards your Advances).'
   },
   {

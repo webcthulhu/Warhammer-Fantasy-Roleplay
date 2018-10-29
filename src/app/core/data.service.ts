@@ -24,6 +24,7 @@ export class DataService {
   private qualities = Qualities.map(i => new Quality(i));
   private skills = Skills.map(i => new Skill(i));
   private talents = Talents.map(i => new Talent(i));
+  // private trappings = Talents.map(i => new Talent(i));
   constructor(private http: HttpClient) {
     // this.getServerData();
   }

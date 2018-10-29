@@ -7,6 +7,7 @@ import {QualitiesComponent} from './qualities/qualities.component';
 import {ConditionsComponent} from './conditions/conditions.component';
 import {TalentsComponent} from './talents/talents.component';
 import {SkillsComponent} from './skills/skills.component';
+import { TrappingsComponent } from './trappings/trappings.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import {SkillsComponent} from './skills/skills.component';
     QualitiesComponent,
     ConditionsComponent,
     TalentsComponent,
-    SkillsComponent
+    SkillsComponent,
+    TrappingsComponent
   ]
 })
 export class RulesModule {
