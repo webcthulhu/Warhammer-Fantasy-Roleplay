@@ -2,7 +2,8 @@
   <mat-expansion-panel *ngFor="let i of skills; trackBy: trackByFn;">
     <mat-expansion-panel-header>
       <mat-panel-title class="text-uppercase font-fell-english-sc">
-        {{ i.name }}
+        {{ i.name}}
+        <span class="m-l-8">({{i.characteristic}})</span>
       </mat-panel-title>
       <mat-panel-description class="text-capitalize font-fell-dw-pica">
         {{ i.type + (i.grouped ? ', group' : '') }}

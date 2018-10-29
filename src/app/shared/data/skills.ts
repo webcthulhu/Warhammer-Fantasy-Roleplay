@@ -2,6 +2,7 @@ interface ISkill {
   name: string;
   type: SKILL_TYPES;
   grouped: boolean;
+  characteristic: string;
   description?: string;
 }
 
@@ -408,230 +409,288 @@ export enum SKILLS {
   TRADE_WRITING = 'trade (writing)'
 }
 
+export enum CHARACTERISTICS {
+  WEAPON_SKILL = 'WS',
+  BALLISTIC_SKILL = 'BS',
+  STRENGTH = 'S',
+  TOUGHNESS = 'T',
+  INITIATIVE = 'I',
+  AGILITY = 'Ag',
+  DEXTERITY = 'Dex',
+  INTELLIGENCE = 'Int',
+  WILLPOWER = 'WP',
+  FELLOWSHIP = 'Fel'
+}
+
 export const Skills: ISkill[] = [
   {
     name: BASIC.ART,
     type: SKILL_TYPES.BASIC,
-    grouped: true
+    grouped: true,
+    characteristic: CHARACTERISTICS.DEXTERITY
   },
   {
     name: BASIC.ATHLETICS,
     type: SKILL_TYPES.BASIC,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.AGILITY
   },
   {
     name: BASIC.BRIBERY,
     type: SKILL_TYPES.BASIC,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.FELLOWSHIP
   },
   {
     name: BASIC.CHARM,
     type: SKILL_TYPES.BASIC,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.FELLOWSHIP
   },
   {
     name: BASIC.CHARM_ANIMAL,
     type: SKILL_TYPES.BASIC,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.WILLPOWER
   },
   {
     name: BASIC.CLIMB,
     type: SKILL_TYPES.BASIC,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.STRENGTH
   },
   {
     name: BASIC.COOL,
     type: SKILL_TYPES.BASIC,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.WILLPOWER
   },
   {
     name: BASIC.CONSUME_ALCOHOL,
     type: SKILL_TYPES.BASIC,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.TOUGHNESS
   },
   {
     name: BASIC.DODGE,
     type: SKILL_TYPES.BASIC,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.AGILITY
   },
   {
     name: BASIC.DRIVE,
     type: SKILL_TYPES.BASIC,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.AGILITY
   },
   {
     name: BASIC.ENDURANCE,
     type: SKILL_TYPES.BASIC,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.TOUGHNESS
   },
   {
     name: BASIC.ENTERTAIN,
     type: SKILL_TYPES.BASIC,
-    grouped: true
+    grouped: true,
+    characteristic: CHARACTERISTICS.FELLOWSHIP
   },
   {
     name: BASIC.GAMBLE,
     type: SKILL_TYPES.BASIC,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.INTELLIGENCE
   },
   {
     name: BASIC.GOSSIP,
     type: SKILL_TYPES.BASIC,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.FELLOWSHIP
   },
   {
     name: BASIC.HAGGLE,
     type: SKILL_TYPES.BASIC,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.FELLOWSHIP
   },
   {
     name: BASIC.INTIMIDATE,
     type: SKILL_TYPES.BASIC,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.STRENGTH
   },
   {
     name: BASIC.INTUITION,
     type: SKILL_TYPES.BASIC,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.INITIATIVE
   },
   {
     name: BASIC.LEADERSHIP,
     type: SKILL_TYPES.BASIC,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.FELLOWSHIP
   },
   {
     name: BASIC.MELEE,
     type: SKILL_TYPES.BASIC,
-    grouped: true
+    grouped: true,
+    characteristic: CHARACTERISTICS.WEAPON_SKILL
   },
   {
     name: BASIC.NAVIGATION,
     type: SKILL_TYPES.BASIC,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.INITIATIVE
   },
   {
     name: BASIC.OUTDOOR_SURVIVAL,
     type: SKILL_TYPES.BASIC,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.INTELLIGENCE
   },
   {
     name: BASIC.PERCEPTION,
     type: SKILL_TYPES.BASIC,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.INITIATIVE
   },
   {
     name: BASIC.RIDE,
     type: SKILL_TYPES.BASIC,
-    grouped: true
+    grouped: true,
+    characteristic: CHARACTERISTICS.AGILITY
   },
   {
     name: BASIC.ROW,
     type: SKILL_TYPES.BASIC,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.STRENGTH
   },
   {
     name: BASIC.STEALTH,
     type: SKILL_TYPES.BASIC,
-    grouped: true
+    grouped: true,
+    characteristic: CHARACTERISTICS.AGILITY
   },
   {
     name: ADVANCED.ANIMAL_CARE,
     type: SKILL_TYPES.ADVANCED,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.INTELLIGENCE
   },
   {
     name: ADVANCED.ANIMAL_TRAINING,
     type: SKILL_TYPES.ADVANCED,
-    grouped: true
+    grouped: true,
+    characteristic: CHARACTERISTICS.INTELLIGENCE
   },
   {
     name: ADVANCED.CHANNELLING,
     type: SKILL_TYPES.ADVANCED,
-    grouped: true
+    grouped: true,
+    characteristic: CHARACTERISTICS.WILLPOWER
   },
   {
     name: ADVANCED.EVALUATE,
     type: SKILL_TYPES.ADVANCED,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.INTELLIGENCE
   },
   {
     name: ADVANCED.HEAL,
     type: SKILL_TYPES.ADVANCED,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.INTELLIGENCE
   },
   {
     name: ADVANCED.LANGUAGE,
     type: SKILL_TYPES.ADVANCED,
-    grouped: true
+    grouped: true,
+    characteristic: CHARACTERISTICS.INTELLIGENCE
   },
   {
     name: ADVANCED.LORE,
     type: SKILL_TYPES.ADVANCED,
-    grouped: true
+    grouped: true,
+    characteristic: CHARACTERISTICS.INTELLIGENCE
   },
   {
     name: ADVANCED.PERFORM,
     type: SKILL_TYPES.ADVANCED,
-    grouped: true
+    grouped: true,
+    characteristic: CHARACTERISTICS.AGILITY
   },
   {
     name: ADVANCED.PICK_LOCK,
     type: SKILL_TYPES.ADVANCED,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.DEXTERITY
   },
   {
     name: ADVANCED.PLAY,
     type: SKILL_TYPES.ADVANCED,
-    grouped: true
+    grouped: true,
+    characteristic: CHARACTERISTICS.DEXTERITY
   },
   {
     name: ADVANCED.PRAY,
     type: SKILL_TYPES.ADVANCED,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.FELLOWSHIP
   },
   {
     name: ADVANCED.RANGED,
     type: SKILL_TYPES.ADVANCED,
-    grouped: true
+    grouped: true,
+    characteristic: CHARACTERISTICS.BALLISTIC_SKILL
   },
   {
     name: ADVANCED.RESEARCH,
     type: SKILL_TYPES.ADVANCED,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.INTELLIGENCE
   },
   {
     name: ADVANCED.SAIL,
     type: SKILL_TYPES.ADVANCED,
-    grouped: true
+    grouped: true,
+    characteristic: CHARACTERISTICS.AGILITY
   },
   {
     name: ADVANCED.SECRET_SIGNS,
     type: SKILL_TYPES.ADVANCED,
-    grouped: true
+    grouped: true,
+    characteristic: CHARACTERISTICS.INTELLIGENCE
   },
   {
     name: ADVANCED.SET_TRAP,
     type: SKILL_TYPES.ADVANCED,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.DEXTERITY
   },
   {
     name: ADVANCED.SLEIGHT_OF_HAND,
     type: SKILL_TYPES.ADVANCED,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.DEXTERITY
   },
   {
     name: ADVANCED.SWIM,
     type: SKILL_TYPES.ADVANCED,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.STRENGTH
   },
   {
     name: ADVANCED.TRACK,
     type: SKILL_TYPES.ADVANCED,
-    grouped: false
+    grouped: false,
+    characteristic: CHARACTERISTICS.INITIATIVE
   },
   {
     name: ADVANCED.TRADE,
     type: SKILL_TYPES.ADVANCED,
-    grouped: true
+    grouped: true,
+    characteristic: CHARACTERISTICS.DEXTERITY
   }
 ];
