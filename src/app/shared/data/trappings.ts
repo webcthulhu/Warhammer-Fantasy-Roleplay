@@ -5,5 +5,4 @@ interface IItem {
 }
 
 export const Trappings: IItem[] = [
-  {}
 ];
