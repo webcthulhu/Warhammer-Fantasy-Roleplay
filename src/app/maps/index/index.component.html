@@ -1,0 +1,8 @@
+<aside>
+  <mat-nav-list>
+    <mat-list-item *ngFor="let i of maps;" (click)="map = i" class="text-capitalize">{{i.name}}</mat-list-item>
+  </mat-nav-list>
+</aside>
+<main>
+  <app-map [map]="map$ | async"></app-map>
+</main>
