@@ -2,7 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {fromEvent, Subject} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
 
-interface IPoint {
+interface IPoi {
   id: string;
   type: string;
   x: number;
@@ -23,7 +23,7 @@ export class MapComponent implements OnInit {
   }
   public name: string = null;
   public src: string = null;
-  public pois: IPoint[] = [];
+  public pois: IPoi[] = [];
   public x: number = null;
   public y: number = null;
   private unsubscribe$ = new Subject();
