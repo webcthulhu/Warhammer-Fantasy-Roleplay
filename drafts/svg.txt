@@ -1,0 +1,2 @@
+https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths
+https://travishorn.com/buttons-with-custom-shapes-cabdcde7dfd1
