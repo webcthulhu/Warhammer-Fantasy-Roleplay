@@ -8,18 +8,11 @@ import {Subject} from 'rxjs';
 })
 export class IndexComponent implements OnInit {
   public maps = [
-    {
-      name: 'empire', src: 'assets/images/empire.jpg',
-      points: [
-        {x: 0, y: 0, type: 'town', id: '010533'}
-      ]
-    },
-    {
-      name: 'bretonia', src: 'assets/images/empire.jpg',
-      points: [
-        {x: 0, y: 0, type: 'town', id: '010533'}
-      ]
-    }
+    {name: 'bretonnia', src: 'bretonnia.jpg'},
+    {name: 'empire', src: 'empire.jpg'},
+    {name: 'kislev', src: 'kislev.jpg'},
+    {name: 'old world', src: 'old-world.jpg'},
+    {name: 'sylvania', src: 'sylvania.jpg'},
   ];
   private mapSource: Subject<any> = new Subject();
   private mapObservable = this.mapSource.asObservable();

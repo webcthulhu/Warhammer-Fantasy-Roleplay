@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./character-creation.component.scss']
 })
 export class CharacterCreationComponent implements OnInit {
-
+  speciesExpBonus = 25;
+  careerExpBonus = 50;
   constructor() { }
 
   ngOnInit() {

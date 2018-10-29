@@ -11,12 +11,13 @@ export class MapComponent implements OnInit {
   @Input('map') set map(value) {
     console.log(value);
   }
+  public src: string = null;
+  public x: number = null;
+  public y: number = null;
   private unsubscribe$ = new Subject();
-  public coordinates = {
-    x: -50,
-    y: -50
-  };
-
+  // points: [
+  //   {x: 0, y: 0, type: 'town', id: '010533'}
+  //   ]
   constructor() {
   }
 

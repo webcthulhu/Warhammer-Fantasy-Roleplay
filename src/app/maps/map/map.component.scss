@@ -1,0 +1,10 @@
+:host {
+  position: relative;
+  //overflow: hidden;
+  .map {
+    position: absolute;
+    //top: 50%;
+    //left: 50%;
+    user-select: none;
+  }
+}
