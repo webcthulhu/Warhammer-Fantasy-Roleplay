@@ -2,22 +2,31 @@ import {Component, Input, OnInit} from '@angular/core';
 import {fromEvent, Subject} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
 
+interface IPoint {
+  id: string;
+  type: string;
+  x: number;
+  y: number;
+}
+
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.scss']
 })
 export class MapComponent implements OnInit {
-  @Input('map') set map(value) {
+  @Input('map') set map(value) { /* name, src */
     console.log(value);
+    this.name = value.name;
+    this.src = value.src;
+    // get pois
   }
+  public name: string = null;
   public src: string = null;
+  public pois: IPoint[] = [];
   public x: number = null;
   public y: number = null;
   private unsubscribe$ = new Subject();
-  // points: [
-  //   {x: 0, y: 0, type: 'town', id: '010533'}
-  //   ]
   constructor() {
   }
 
@@ -57,4 +66,7 @@ export class MapComponent implements OnInit {
       });
   }
 
+  onMarkerClick(id: string) {
+    // get description
+  }
 }
