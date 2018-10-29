@@ -3787,28 +3787,28 @@ export const Careers: ICareer[] = [
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.COMBAT_AWARE,
+        TALENTS.CRACK_THE_WHIP,
+        TALENTS.LIGHTNING_REFLEXES,
+        TALENTS.ROUGHRIDER
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.ETIQUETTE_SOLDIERS,
+        TALENTS.GUNNER,
+        TALENTS.SEASONED_TRAVELLER,
+        TALENTS.TRICK_RIDING
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.COMBAT_REFLEXES,
+        TALENTS.FAST_SHOT,
+        TALENTS.HATRED_ANY,
+        TALENTS.WAR_LEADER
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.ACCURATE_SHOT,
+        TALENTS.INSPIRING,
+        TALENTS.REACTION_STRIKE,
+        TALENTS.ROBUST
       ]
     ],
     trappings: [[], [], [], []]
@@ -3817,62 +3817,63 @@ export const Careers: ICareer[] = [
     class: CLASSES.WARRIORS,
     name: CAREERS.GUARD,
     limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF, SPECIES.WOOD_ELF],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    characteristics: [1, 0, 3, 1, 2, 1, 0, 4, 0, 0],
+    levels: ['sentry', 'guard', 'honour guard', 'guard officer'],
+    status: [[STATUS.SILVER, 1], [STATUS.SILVER, 2], [STATUS.SILVER, 3], [STATUS.SILVER, 5]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.CONSUME_ALCOHOL,
+        SKILLS.ENDURANCE,
+        SKILLS.ENTERTAIN_STORYTELLING,
+        SKILLS.GAMBLE,
+        SKILLS.GOSSIP,
+        SKILLS.INTUITION,
+        SKILLS.MELEE_BASIC,
+        SKILLS.PERCEPTION
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.ATHLETICS,
+        SKILLS.COOL,
+        SKILLS.DODGE,
+        SKILLS.INTIMIDATE,
+        SKILLS.MELEE_POLEARM,
+        SKILLS.RANGED_BOW
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.HEAL,
+        SKILLS.LANGUAGE_BATTLE,
+        SKILLS.LORE_ETIQUETTE,
+        SKILLS.MELEE_TWOHANDED
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.LEADERSHIP,
+        SKILLS.LORE_WARFARE
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.DICEMAN,
+        TALENTS.ETIQUETTE_SERVANTS,
+        TALENTS.STRIKE_TO_STUN,
+        TALENTS.TENACIOUS
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.RELENTLESS,
+        TALENTS.REVERSAL,
+        TALENTS.SHIELDSMAN,
+        TALENTS.STRIKE_MIGHTY_BLOW
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.FEARLESS_INTRUDERS,
+        TALENTS.JUMP_UP,
+        TALENTS.STOUT_HEARTED,
+        TALENTS.UNSHAKABLE
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.COMBAT_MASTER,
+        TALENTS.FURIOUS_ASSAULT,
+        TALENTS.IRON_WILL,
+        TALENTS.ROBUST
       ]
     ],
     trappings: [[], [], [], []]
@@ -3916,28 +3917,28 @@ export const Careers: ICareer[] = [
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.ETIQUETTE_ANY,
+        TALENTS.ROUGHRIDER,
+        TALENTS.STURDY,
+        TALENTS.WARRIOR_BORN
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.MENACING,
+        TALENTS.SEASONED_TRAVELLER,
+        TALENTS.SHIELDSMAN,
+        TALENTS.STRIKE_MIGHTY_BLOW
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.FEARLESS_ANY,
+        TALENTS.STOUT_HEARTED,
+        TALENTS.UNSHAKABLE,
+        TALENTS.WAR_LEADER
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.DISARM,
+        TALENTS.INSPIRING,
+        TALENTS.IRON_WILL,
+        TALENTS.STRIKE_TO_INJURE
       ]
     ],
     trappings: [[], [], [], []]
@@ -3946,62 +3947,63 @@ export const Careers: ICareer[] = [
     class: CLASSES.WARRIORS,
     name: CAREERS.PIT_FIGHTER,
     limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HALFLING, SPECIES.HIGH_ELF, SPECIES.WOOD_ELF],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    characteristics: [1, 0, 1, 1, 2, 3, 0, 0, 0, 4],
+    levels: ['pugilist', 'pit fighter', 'pit champion', 'pit legend'],
+    status: [[STATUS.BRASS, 4], [STATUS.SILVER, 2], [STATUS.SILVER, 5], [STATUS.GOLD, 2]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.ATHLETICS,
+        SKILLS.COOL,
+        SKILLS.DODGE,
+        SKILLS.ENDURANCE,
+        SKILLS.GAMBLE,
+        SKILLS.INTIMIDATE,
+        SKILLS.MELEE_ANY,
+        SKILLS.MELEE_BRAWLING
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.HAGGLE,
+        SKILLS.INTUITION,
+        SKILLS.MELEE_BASIC,
+        [SKILLS.MELEE_FLAIL, SKILLS.MELEE_TWOHANDED].join(' or '),
+        SKILLS.PERCEPTION,
+        SKILLS.RANGED_ENTANGLING
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.CONSUME_ALCOHOL,
+        SKILLS.GOSSIP,
+        SKILLS.LORE_ANATOMY,
+        SKILLS.PERFORM_FIGHT
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.CHARM,
+        SKILLS.RANGED_ANY
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.DIRTY_FIGHTING,
+        TALENTS.IN_FIGHTER,
+        TALENTS.IRON_JAW,
+        TALENTS.REVERSAL
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.AMBIDEXTROUS,
+        TALENTS.COMBAT_REFLEXES,
+        TALENTS.DUAL_WIELDER,
+        TALENTS.SHIELDSMAN
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.COMBAT_MASTER,
+        TALENTS.DISARM,
+        TALENTS.MENACING,
+        TALENTS.ROBUST
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.FRIGHTENING,
+        TALENTS.FURIOUS_ASSAULT,
+        TALENTS.IMPLACABLE,
+        TALENTS.REACTION_STRIKE
       ]
     ],
     trappings: [[], [], [], []]
@@ -4010,62 +4012,63 @@ export const Careers: ICareer[] = [
     class: CLASSES.WARRIORS,
     name: CAREERS.PROTAGONIST,
     limitations: [SPECIES.HUMAN, SPECIES.DWARF, SPECIES.HIGH_ELF],
-    characteristics: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    levels: ['', '', '', ''], status: [[STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1], [STATUS.BRASS, 1]],
+    characteristics: [1, 3, 0, 1, 2, 1, 0, 0, 0, 4],
+    levels: ['braggart', 'protagonist', 'hitman', 'assassin'],
+    status: [[STATUS.BRASS, 2], [STATUS.SILVER, 1], [STATUS.SILVER, 4], [STATUS.GOLD, 1]],
     skills: [
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.ATHLETICS,
+        SKILLS.DODGE,
+        SKILLS.ENDURANCE,
+        SKILLS.ENTERTAIN_TAUNT,
+        SKILLS.GOSSIP,
+        SKILLS.HAGGLE,
+        SKILLS.INTIMIDATE,
+        SKILLS.MELEE_ANY
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.BRIBERY,
+        SKILLS.CHARM,
+        SKILLS.INTUITION,
+        SKILLS.MELEE_BASIC,
+        SKILLS.PERCEPTION,
+        SKILLS.RIDE_HORSE
       ],
       [
-        SKILLS.,
-        SKILLS.,
-        SKILLS.,
-        SKILLS.
+        SKILLS.CLIMB,
+        SKILLS.COOL,
+        SKILLS.NAVIGATION,
+        SKILLS.RANGED_THROWN
       ],
       [
-        SKILLS.,
-        SKILLS.
+        SKILLS.ENTERTAIN_ACTING,
+        SKILLS.RANGED_CROSSBOW
       ]
     ],
     talents: [
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.IN_FIGHTER,
+        TALENTS.DIRTY_FIGHTING,
+        TALENTS.MENACING,
+        TALENTS.WARRIOR_BORN
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.COMBAT_REFLEXES,
+        TALENTS.CRIMINAL,
+        TALENTS.REVERSAL,
+        TALENTS.STRIKE_TO_STUN
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.CAREFUL_STRIKE,
+        TALENTS.DISARM,
+        TALENTS.MARKSMAN,
+        TALENTS.RELENTLESS
       ],
       [
-        TALENTS.,
-        TALENTS.,
-        TALENTS.,
-        TALENTS.
+        TALENTS.ACCURATE_SHOT,
+        TALENTS.AMBIDEXTROUS,
+        TALENTS.FURIOUS_ASSAULT,
+        TALENTS.STRIKE_TO_INJURE
       ]
     ],
     trappings: [[], [], [], []]

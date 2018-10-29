@@ -87,6 +87,7 @@ export enum TALENTS {
   FEARLESS_CRIMINALS = 'fearless (criminals)',
   FEARLESS_EVERYTHING = 'fearless (everything)',
   FEARLESS_HERETICS = 'fearless (heretics)',
+  FEARLESS_INTRUDERS = 'fearless (intruders)',
   FEARLESS_MONSTERS = 'fearless (monsters)',
   FEARLESS_OUTLAWS = 'fearless (outlaws)',
   FEARLESS_RATS = 'fearless (rats)',
