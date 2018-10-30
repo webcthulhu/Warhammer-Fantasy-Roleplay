@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {fromEvent, Subject} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
+import {DataService} from '../../core/data.service';
 
 interface IPoi {
   id: string;
@@ -15,19 +16,12 @@ interface IPoi {
   styleUrls: ['./map.component.scss']
 })
 export class MapComponent implements OnInit {
-  @Input('map') set map(value) { /* name, src */
-    if (value) {
-      this.name = value.name;
-      this.src = value.src;
-      this.width = value.width;
-      this.height = value.height;
-    } else {
-      this.name = null;
-      this.src = null;
-      this.width = null;
-      this.height = null;
-    }
-    // get pois
+  @Input('map') set map(value) {
+    this.name = value.name;
+    this.src = value.src;
+    this.width = value.width;
+    this.height = value.height;
+    this.data.getMapData(this.name);
   }
   public name: string = null;
   public src: string = null;
@@ -37,7 +31,7 @@ export class MapComponent implements OnInit {
   public x: number = null;
   public y: number = null;
   private unsubscribe$ = new Subject();
-  constructor() {
+  constructor(private data: DataService) {
   }
 
   ngOnInit() {

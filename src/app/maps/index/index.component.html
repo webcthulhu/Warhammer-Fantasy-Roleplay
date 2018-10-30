@@ -4,5 +4,5 @@
   </mat-nav-list>
 </aside>
 <main>
-  <app-map [map]="map$ | async"></app-map>
+  <app-map *ngIf="map$ | async as i" [map]="i"></app-map>
 </main>

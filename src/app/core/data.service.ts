@@ -25,17 +25,22 @@ export class DataService {
     MALE_NAMES: 'male-names.csv',
     FEMALE_NAMES: 'female-names.csv'
   };
-  private careers = Careers.map(i => new Career(i));
-  private conditions;
-  private qualities;
-  private skills = Skills.map(i => new Skill(i));
-  private talents;
-  private trappings = Trappings.map(i => new Item(i));
+  public careers = Careers.map(i => new Career(i));
+  public conditions;
+  public qualities;
+  public skills = Skills.map(i => new Skill(i));
+  public talents;
+  public trappings = Trappings.map(i => new Item(i));
   constructor(private http: HttpClient) {
     this.getServerData();
   }
   get(key) {
     return this[key];
+  }
+  getMapData(id: string) {
+    // return this.http.get(DataService.DATA_URL + DataService.RESOURCES.CONDITIONS).subscribe((res: any[]) => {
+    //   this.conditions = res.map(i => new Condition(i));
+    // });
   }
   getServerData() {
     // this.http.get('assets/data/male-names.csv', {responseType: 'text'}).subscribe(res => {
