@@ -16,13 +16,23 @@ interface IPoi {
 })
 export class MapComponent implements OnInit {
   @Input('map') set map(value) { /* name, src */
-    console.log(value);
-    this.name = value.name;
-    this.src = value.src;
+    if (value) {
+      this.name = value.name;
+      this.src = value.src;
+      this.width = value.width;
+      this.height = value.height;
+    } else {
+      this.name = null;
+      this.src = null;
+      this.width = null;
+      this.height = null;
+    }
     // get pois
   }
   public name: string = null;
   public src: string = null;
+  public width: number = null;
+  public height: number = null;
   public pois: IPoi[] = [];
   public x: number = null;
   public y: number = null;

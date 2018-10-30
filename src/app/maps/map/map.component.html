@@ -1,5 +1,5 @@
-<img class="map" [src]="'assets/images/maps' + src" [style.transform]="'translate(' + x + 'px, ' + y + 'px)'" (mousedown)="onMouseDown($event)">
-<svg class="overlay" width="120" height="120">
+<img class="map" [src]="'assets/images/maps/' + src" [style.transform]="'translate(' + x + 'px, ' + y + 'px)'">
+<svg class="overlay" [attr.width]="width" [attr.height]="height" (mousedown)="onMouseDown($event)">
   <ng-container *ngFor="let poi of pois">
     <circle cx="60" cy="60" r="60" (click)="onMarkerClick('id')"></circle>
   </ng-container>

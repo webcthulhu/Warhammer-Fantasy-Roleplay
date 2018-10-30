@@ -8,11 +8,11 @@ import {Subject} from 'rxjs';
 })
 export class IndexComponent implements OnInit {
   public maps = [
-    {name: 'bretonnia', src: 'bretonnia.jpg'},
-    {name: 'empire', src: 'empire.jpg'},
-    {name: 'kislev', src: 'kislev.jpg'},
-    {name: 'old world', src: 'old-world.jpg'},
-    {name: 'sylvania', src: 'sylvania.jpg'},
+    {name: 'bretonnia', src: 'bretonnia.jpg', width: 2175, height: 2850},
+    {name: 'empire', src: 'empire.jpg', width: 1596, height: 1024},
+    {name: 'kislev', src: 'kislev.jpg', width: 2829, height: 2000},
+    {name: 'old world', src: 'old-world.jpg', width: 2868, height: 2850},
+    {name: 'sylvania', src: 'sylvania.jpg', width: 2121, height: 3000}
   ];
   private mapSource: Subject<any> = new Subject();
   private mapObservable = this.mapSource.asObservable();
