@@ -21,7 +21,11 @@ export class MapComponent implements OnInit {
     this.src = value.src;
     this.width = value.width;
     this.height = value.height;
-    this.data.getMapData(this.name);
+    this.data.getMapData(this.name).subscribe((res: IPoi[]) => {
+      this.pois = res;
+    }, () => {
+      this.pois = [];
+    });
   }
   public name: string = null;
   public src: string = null;

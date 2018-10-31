@@ -38,9 +38,7 @@ export class DataService {
     return this[key];
   }
   getMapData(id: string) {
-    // return this.http.get(DataService.DATA_URL + DataService.RESOURCES.CONDITIONS).subscribe((res: any[]) => {
-    //   this.conditions = res.map(i => new Condition(i));
-    // });
+    return this.http.get(DataService.DATA_URL + `maps/${id}.json`);
   }
   getServerData() {
     // this.http.get('assets/data/male-names.csv', {responseType: 'text'}).subscribe(res => {
