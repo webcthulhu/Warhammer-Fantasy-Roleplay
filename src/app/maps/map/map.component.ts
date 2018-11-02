@@ -53,8 +53,8 @@ export class MapComponent implements OnInit {
     fromEvent(document, 'mousemove')
       .pipe(takeUntil(this.unsubscribe$))
       .subscribe((e: MouseEvent) => {
-        this.x = e.clientX - initial.x;
-        this.y = e.clientY - initial.y;
+        this.x = Math.min(e.clientX - initial.x, 0);
+        this.y = Math.min(e.clientY - initial.y, 0);
       });
   }
 
