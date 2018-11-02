@@ -13,8 +13,20 @@
     .selected {
       color: $primary;
     }
+    .decoration {
+      position: absolute;
+      bottom: -3px;
+      left: 25px;
+      z-index: 100;
+      width: 62px;
+      height: 162px;
+      object-fit: fill;
+      pointer-events: none;
+      user-select: none;
+    }
   }
   main {
     grid-area: main;
+    overflow: hidden;
   }
 }

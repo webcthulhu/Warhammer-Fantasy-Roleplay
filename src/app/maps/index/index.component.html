@@ -2,6 +2,7 @@
   <mat-nav-list>
     <mat-list-item *ngFor="let i of maps;" (click)="map = i" class="text-capitalize">{{i.name}}</mat-list-item>
   </mat-nav-list>
+  <img src="assets/images/003.png" class="decoration">
 </aside>
 <main>
   <app-map *ngIf="map$ | async as i" [map]="i"></app-map>

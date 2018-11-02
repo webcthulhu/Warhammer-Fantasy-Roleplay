@@ -44,10 +44,7 @@ export class MapComponent implements OnInit {
   onMouseDown(e) {
     e.preventDefault();
     e.stopPropagation();
-    const initial = {
-      x: e.clientX,
-      y: e.clientY
-    };
+    const initial = { x: e.clientX - this.x, y: e.clientY - this.y };
     this.onMouseMove(initial);
     this.onMouseUp();
   }
@@ -56,12 +53,8 @@ export class MapComponent implements OnInit {
     fromEvent(document, 'mousemove')
       .pipe(takeUntil(this.unsubscribe$))
       .subscribe((e: MouseEvent) => {
-        const delta = {x: e.clientX - initial.x, y: e.clientY - initial.y};
-        console.log(delta);
-        // this.coordinates = {
-        //   x: -50 + delta.x,
-        //   y: -50 + delta.y
-        // };
+        this.x = e.clientX - initial.x;
+        this.y = e.clientY - initial.y;
       });
   }
 

@@ -10,12 +10,25 @@
     "aside main";
   aside {
     grid-area: aside;
+    position: relative;
     .selected {
       color: $primary;
+    }
+    .decoration {
+      position: absolute;
+      bottom: -3px;
+      left: 3px;
+      z-index: 100;
+      width: 118px;
+      height: 158px;
+      object-fit: fill;
+      pointer-events: none;
+      user-select: none;
     }
   }
   main {
     grid-area: main;
+    position: relative;
     overflow: auto;
     padding: 0 5px;
   }

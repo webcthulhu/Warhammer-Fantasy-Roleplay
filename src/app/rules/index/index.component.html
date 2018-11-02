@@ -6,6 +6,7 @@
     <mat-list-item [class.selected]="section === 'skills'" (click)="section = 'skills'">Skills</mat-list-item>
     <mat-list-item [class.selected]="section === 'talents'" (click)="section = 'talents'">Talents</mat-list-item>
   </mat-nav-list>
+  <img src="assets/images/001.png" class="decoration">
 </aside>
 <main [ngSwitch]="section">
   <app-careers *ngSwitchCase="'careers'"></app-careers>
