@@ -7,3 +7,7 @@ https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20%26%20beyond
 
 Продукт
 https://habr.com/users/MaxKitsch/
+
+
+HTTP Interceptors
+https://github.com/angular/angular/tree/master/aio/content/examples/http/src/app/http-interceptors
