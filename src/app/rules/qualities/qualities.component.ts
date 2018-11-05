@@ -1,6 +1,7 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import {IQuality} from '../../shared/data/qualities';
 import {DataService} from '../../core/data.service';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-qualities',
@@ -9,10 +10,10 @@ import {DataService} from '../../core/data.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class QualitiesComponent implements OnInit {
-  public qualities: IQuality[];
+  public qualities: Observable<IQuality[]>;
 
   constructor(private data: DataService) {
-    this.qualities = this.data.get('qualities');
+    this.qualities = this.data.qualities;
   }
 
   ngOnInit() {

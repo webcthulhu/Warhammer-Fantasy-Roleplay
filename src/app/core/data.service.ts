@@ -42,15 +42,11 @@ export class DataService {
     { name: 'talents', url: 'assets/data/talents.json', obj: Talent },
     // { name: 'trappings', url: 'assets/data/trappings.json', obj: Career },
   ];
-  private data: Data;
+  private data: Data = new Data();
   private dataSource: BehaviorSubject<any> = new BehaviorSubject(this.data);
   private dataObservable = this.dataSource.asObservable().pipe(share());
   constructor(private http: HttpClient) {
-    this.data = new Data();
     this.getServerData();
-  }
-  get(key) {
-    return this[key];
   }
   get careers() {
     return this.dataObservable.pipe(map(res => res.careers));
@@ -86,7 +82,9 @@ export class DataService {
     ).pipe(
       tap(i => { console.log(i); }),
       concatMap((url: string) => this.http.get(url)),
-      map((value: any[], index: number): [string, any] => [DataService.RESOURCES[index].name, value.map(i => new DataService.RESOURCES[index].obj(i))] )
+      map((value: any[], index: number): [string, any] => [
+        DataService.RESOURCES[index].name, value.map(i => new DataService.RESOURCES[index].obj(i))
+      ])
     ).subscribe((res) => {
       this.data[res[0]] = res[1];
     }, () => {}, () => {

@@ -11,7 +11,7 @@ export class TrappingsComponent implements OnInit {
   public trappings;
 
   constructor(private data: DataService) {
-    this.trappings = this.data.get('trappings');
+    this.trappings = this.data.trappings;
   }
 
   ngOnInit() {

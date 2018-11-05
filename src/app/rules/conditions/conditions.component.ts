@@ -1,6 +1,7 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import {ICondition} from '../../shared/data/conditions';
 import {DataService} from '../../core/data.service';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-conditions',
@@ -9,10 +10,10 @@ import {DataService} from '../../core/data.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ConditionsComponent implements OnInit {
-  public conditions: ICondition[];
+  public conditions: Observable<ICondition[]>;
 
   constructor(private data: DataService) {
-    this.conditions = this.data.get('conditions');
+    this.conditions = this.data.conditions;
   }
 
   ngOnInit() {

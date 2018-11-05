@@ -11,7 +11,7 @@ export class SkillsComponent implements OnInit {
   public skills;
 
   constructor(private data: DataService) {
-    this.skills = this.data.get('skills');
+    this.skills = this.data.skills;
   }
 
   ngOnInit() {
