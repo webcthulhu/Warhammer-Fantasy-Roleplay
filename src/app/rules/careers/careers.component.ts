@@ -9,14 +9,11 @@ import {DataService} from '../../core/data.service';
 })
 export class CareersComponent implements OnInit {
   public careers;
-
   constructor(private data: DataService) {
     this.careers = this.data.careers;
   }
-
   ngOnInit() {
   }
-
   trackByFn(item, index) {
     return item.name;
   }

@@ -70,9 +70,6 @@ export class DataService {
     return this.http.get(DataService.DATA_URL + `maps/${id}.json`);
   }
   getServerData() {
-    // this.data.careers = Careers.map(i => new Career(i));
-    // this.data.skills = Skills.map(i => new Skill(i));
-    // this.data.trappings = Trappings.map(i => new Item(i));
     // this.http.get('assets/data/male-names.csv', {responseType: 'text'}).subscribe(res => {
     //   const result = res.split(',');
     //   console.log(result);
