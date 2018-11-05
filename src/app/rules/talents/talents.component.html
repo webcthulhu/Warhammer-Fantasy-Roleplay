@@ -1,5 +1,5 @@
 <mat-accordion>
-  <mat-expansion-panel *ngFor="let i of talents; trackBy: trackByFn;">
+  <mat-expansion-panel *ngFor="let i of talents | async; trackBy: trackByFn;">
     <mat-expansion-panel-header>
       <mat-panel-title class="text-uppercase font-fell-english-sc">
         {{ i.name }}

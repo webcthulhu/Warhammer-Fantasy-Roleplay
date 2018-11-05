@@ -12,6 +12,8 @@ import {Careers} from '../shared/data/careers';
 import {Skills} from '../shared/data/skills';
 // import {Talents} from '../shared/data/talents';
 import {Trappings} from '../shared/data/trappings';
+import {BehaviorSubject} from 'rxjs';
+import {map, share} from 'rxjs/internal/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -26,16 +28,35 @@ export class DataService {
     FEMALE_NAMES: 'female-names.csv'
   };
   public careers = Careers.map(i => new Career(i));
-  public conditions;
-  public qualities;
+  // public conditions;
+  // public qualities;
   public skills = Skills.map(i => new Skill(i));
-  public talents;
+  // public talents;
   public trappings = Trappings.map(i => new Item(i));
+  private data = {
+    careers: [],
+    conditions: [],
+    qualities: [],
+    skills: [],
+    talents: [],
+    trappings: []
+  };
+  private dataSource: BehaviorSubject<any> = new BehaviorSubject(this.data);
+  private dataObservable = this.dataSource.asObservable().pipe(share());
   constructor(private http: HttpClient) {
     this.getServerData();
   }
   get(key) {
     return this[key];
+  }
+  get conditions() {
+    return this.dataObservable.pipe(map(res => res.conditions));
+  }
+  get qualities() {
+    return this.dataObservable.pipe(map(res => res.qualities));
+  }
+  get talents() {
+    return this.dataObservable.pipe(map(res => res.talents));
   }
   getMapData(id: string) {
     return this.http.get(DataService.DATA_URL + `maps/${id}.json`);
@@ -46,35 +67,19 @@ export class DataService {
     //   console.log(result);
     // });
     this.http.get(DataService.DATA_URL + DataService.RESOURCES.CONDITIONS).subscribe((res: any[]) => {
-      this.conditions = res.map(i => new Condition(i));
+      // this.conditions = res.map(i => new Condition(i));
+      this.data.conditions = res.map(i => new Condition(i));
+      this.dataSource.next(this.data);
     });
     this.http.get(DataService.DATA_URL + DataService.RESOURCES.QUALITIES).subscribe((res: any[]) => {
-      this.qualities = res.map(i => new Quality(i));
+      // this.qualities = res.map(i => new Quality(i));
+      this.data.qualities = res.map(i => new Quality(i));
+      this.dataSource.next(this.data);
     });
     this.http.get(DataService.DATA_URL + DataService.RESOURCES.TALENTS).subscribe((res: any[]) => {
-      this.talents = res.map(i => new Talent(i));
+      // this.talents = res.map(i => new Talent(i));
+      this.data.talents = res.map(i => new Talent(i));
+      this.dataSource.next(this.data);
     });
-    // Promise.all([
-    //   new Promise((resolve, reject) => {
-    //     this.http.get(DataService.DATA_URL + DataService.RESOURCES.CONDITIONS).subscribe((res: any[]) => {
-    //       this.conditions = res.map(i => new Condition(i));
-    //       resolve();
-    //     });
-    //   }),
-    //   new Promise((resolve, reject) => {
-    //     this.http.get(DataService.DATA_URL + DataService.RESOURCES.QUALITIES).subscribe((res: any[]) => {
-    //       this.qualities = res.map(i => new Quality(i));
-    //       resolve();
-    //     });
-    //   }),
-    //   new Promise((resolve, reject) => {
-    //     this.http.get(DataService.DATA_URL + DataService.RESOURCES.TALENTS).subscribe((res: any[]) => {
-    //       this.talents = res.map(i => new Talent(i));
-    //       resolve();
-    //     });
-    //   })
-    // ]).then(res => {
-    //   console.log('ALL DONE!');
-    // });
   }
 }

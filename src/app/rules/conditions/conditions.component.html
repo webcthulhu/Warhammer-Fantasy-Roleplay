@@ -1,5 +1,5 @@
 <mat-accordion>
-  <mat-expansion-panel *ngFor="let condition of conditions; trackBy: trackByFn;">
+  <mat-expansion-panel *ngFor="let condition of conditions | async; trackBy: trackByFn;">
     <mat-expansion-panel-header>
       <mat-panel-title class="text-uppercase font-fell-english-sc">
         {{ condition.name }}

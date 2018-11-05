@@ -1,5 +1,5 @@
 <mat-accordion>
-  <mat-expansion-panel *ngFor="let quality of qualities; trackBy: trackByFn;">
+  <mat-expansion-panel *ngFor="let quality of qualities | async; trackBy: trackByFn;">
     <mat-expansion-panel-header>
       <mat-panel-title class="text-capitalize font-fell-english">
         <span class="text-uppercase font-fell-english-sc m-r-8">
