@@ -11,6 +11,7 @@ import {Skills} from '../shared/data/skills';
 import {Trappings} from '../shared/data/trappings';
 import {BehaviorSubject, combineLatest, forkJoin, from, Observable, of} from 'rxjs';
 import {catchError, concatMap, map, mergeMap, share, tap} from 'rxjs/operators';
+import {CoreModule} from './core.module';
 
 class Data {
   careers: any[];
@@ -30,7 +31,7 @@ class Data {
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: CoreModule
 })
 export class DataService {
   static readonly DATA_URL = 'assets/data/';
@@ -77,7 +78,6 @@ export class DataService {
     from(
       DataService.RESOURCES.map(resource => resource.url)
     ).pipe(
-      tap(i => { console.log(i); }),
       concatMap((url: string) => this.http.get(url)),
       map((value: any[], index: number): [string, any] => [
         DataService.RESOURCES[index].name, value.map(i => new DataService.RESOURCES[index].obj(i))
@@ -85,7 +85,6 @@ export class DataService {
     ).subscribe((res) => {
       this.data[res[0]] = res[1];
     }, () => {}, () => {
-      console.log('complete');
       this.dataSource.next(this.data);
     });
     // combineLatest(resources.map(resource => this.http.get(resource.url))).subscribe((res) => {
