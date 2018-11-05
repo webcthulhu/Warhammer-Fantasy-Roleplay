@@ -1,6 +1,6 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-import {ICondition} from '../../shared/data/conditions';
-import {DataService} from '../../core/data.service';
+import {ICondition} from '@app/shared/data/conditions';
+import {DataService} from '@app/core';
 import {Observable} from 'rxjs';
 
 @Component({

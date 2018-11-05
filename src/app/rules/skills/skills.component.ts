@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-import {DataService} from '../../core/data.service';
+import {DataService} from '@app/core';
 
 @Component({
   selector: 'app-skills',

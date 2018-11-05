@@ -1,6 +1,6 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-import {IQuality} from '../../shared/data/qualities';
-import {DataService} from '../../core/data.service';
+import {IQuality} from '@app/shared/data/qualities';
+import {DataService} from '@app/core';
 import {Observable} from 'rxjs';
 
 @Component({

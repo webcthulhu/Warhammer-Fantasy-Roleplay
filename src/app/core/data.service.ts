@@ -1,17 +1,17 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {Career} from '../shared/models/career';
-import {Condition} from '../shared/models/condition';
+import {Career} from '@app/shared/models/career';
+import {Condition} from '@app/shared/models/condition';
 import {Item} from '../shared/models/item';
-import {Quality} from '../shared/models/quality';
-import {Skill} from '../shared/models/skill';
-import {Talent} from '../shared/models/talent';
-import {Careers} from '../shared/data/careers';
-import {Skills} from '../shared/data/skills';
-import {Trappings} from '../shared/data/trappings';
+import {Quality} from '@app/shared/models/quality';
+import {Skill} from '@app/shared/models/skill';
+import {Talent} from '@app/shared/models/talent';
+import {Careers} from '@app/shared/data/careers';
+import {Skills} from '@app/shared/data/skills';
+import {Trappings} from '@app/shared/data/trappings';
 import {BehaviorSubject, combineLatest, forkJoin, from, Observable, of} from 'rxjs';
 import {catchError, concatMap, map, mergeMap, share, tap} from 'rxjs/operators';
-import {CoreModule} from './core.module';
+import {CoreModule} from '@app/core';
 
 class Data {
   careers: any[];
