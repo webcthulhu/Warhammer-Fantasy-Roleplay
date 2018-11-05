@@ -1,10 +1,11 @@
-import {Component, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import {DataService} from '../../core/data.service';
 
 @Component({
   selector: 'app-talents',
   templateUrl: './talents.component.html',
-  styleUrls: ['./talents.component.scss']
+  styleUrls: ['./talents.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TalentsComponent implements OnInit {
   public talents;

@@ -1,11 +1,12 @@
-import {Component, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import {ICondition} from '../../shared/data/conditions';
 import {DataService} from '../../core/data.service';
 
 @Component({
   selector: 'app-conditions',
   templateUrl: './conditions.component.html',
-  styleUrls: ['./conditions.component.scss']
+  styleUrls: ['./conditions.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ConditionsComponent implements OnInit {
   public conditions: ICondition[];

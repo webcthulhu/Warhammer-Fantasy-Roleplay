@@ -1,6 +1,6 @@
 <!-- Careers -->
 <mat-accordion>
-  <mat-expansion-panel *ngFor="let career of careers; trackBy: trackByFn;">
+  <mat-expansion-panel *ngFor="let career of careers | async; trackBy: trackByFn;">
     <mat-expansion-panel-header>
       <mat-panel-title class="text-uppercase font-fell-english-sc">
         {{ career.name }}
