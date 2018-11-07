@@ -11,7 +11,7 @@ import {Skills} from '@app/shared/data/skills';
 import {Trappings} from '@app/shared/data/trappings';
 import {BehaviorSubject, combineLatest, forkJoin, from, Observable, of} from 'rxjs';
 import {catchError, concatMap, map, mergeMap, share, tap} from 'rxjs/operators';
-import {CoreModule} from '@app/core';
+import {CoreModule} from '@app/core/core.module';
 
 class Data {
   careers: any[];
