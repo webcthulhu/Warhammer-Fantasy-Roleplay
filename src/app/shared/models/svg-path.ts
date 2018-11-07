@@ -5,6 +5,7 @@ export interface IPathOptions {
 }
 
 export class Path {
+  static readonly VALID_LETTERS: string = 'mlhvcsqtaz';
   private _d: string[];
   private _fill: string;
   private _stroke: string;
@@ -30,7 +31,10 @@ export class Path {
     return this;
   }
   from(value: string): Path {
-    this._d = value.match(/[a-z]+[^a-z]+/gi);
+    const letters = Path.VALID_LETTERS.split('').join('|');
+    const pattern = `[${letters}]+[^${letters}]*`;
+    const expression = new RegExp(pattern, 'gi');
+    this._d = value.match(expression);
     return this;
   }
   horizontal(x: number): Path {

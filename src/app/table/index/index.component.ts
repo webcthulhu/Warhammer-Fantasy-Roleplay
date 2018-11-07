@@ -15,17 +15,6 @@ export class IndexComponent implements OnInit {
 
   constructor(private data: DataService) {
     // const app = new PIXI.Application();
-    const path1 = new Path()
-      .move(0, 0)
-      .line(100, 0)
-      .vertical(100)
-      .horizontal(-100)
-      .close()
-      .fill('#fff')
-      .stroke('#000')
-      .finalize();
-    const path2 = new Path().from('M10 10H90V90H10Z');
-
   }
 
   ngOnInit() {
