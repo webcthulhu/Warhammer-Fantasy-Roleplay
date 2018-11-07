@@ -97,4 +97,7 @@ export class DataService {
     //   this.dataSource.next(this.data);
     // });
   }
+  getMarkers() {
+    // return this.http.get('assets/data/')
+  }
 }
