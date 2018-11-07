@@ -1,0 +1,35 @@
+@import '../../../themes.scss';
+
+:host {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "aside main";
+  aside {
+    grid-area: aside;
+    position: relative;
+    .selected {
+      color: $primary;
+    }
+    .decoration {
+      position: absolute;
+      bottom: -3px;
+      left: 3px;
+      z-index: 100;
+      width: 118px;
+      height: 158px;
+      object-fit: fill;
+      pointer-events: none;
+      user-select: none;
+    }
+  }
+  main {
+    grid-area: main;
+    position: relative;
+    overflow: auto;
+    padding: 0 5px;
+  }
+}
