@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {State} from '@app/shared/models/state';
 import {BehaviorSubject} from 'rxjs';
-import {CoreModule} from '@app/core';
+import {CoreModule} from '@app/core/core.module';
 
 @Injectable({
   providedIn: CoreModule
