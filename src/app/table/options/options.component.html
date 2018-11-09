@@ -1,0 +1,6 @@
+<p>Table</p>
+<mat-grid-list cols="6" rowHeight="1:1">
+  <mat-grid-tile *ngFor="let marker of markers, index as i;">
+    <img [src]="'assets/images/markers/' + marker.src" [alt]="marker.name">
+  </mat-grid-tile>
+</mat-grid-list>
