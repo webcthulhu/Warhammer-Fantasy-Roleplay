@@ -1,10 +1,10 @@
-import {Component, ElementRef, OnInit} from '@angular/core';
+import {Component, ElementRef, HostListener, OnInit} from '@angular/core';
 import * as PIXI from 'pixi.js/dist/pixi.js';
 
 const DEFAULTS = {
   URL: 'assets/table/',
-  ROWS: 5,
-  COLS: 5,
+  ROWS: 10,
+  COLS: 10,
   SIZE: 64
 };
 
@@ -24,15 +24,19 @@ export class CanvasComponent implements OnInit {
       resolution: 1,
       backgroundColor: 0xffffff
     });
-    this.app.renderer.view.style.borderLeft = '1px solid black';
-    this.app.renderer.view.style.borderTop = '1px solid black';
+    // this.app.renderer.view.style.borderLeft = '1px solid black';
+    // this.app.renderer.view.style.borderTop = '1px solid black';
     el.nativeElement.append(this.app.view);
-    const texture = new PIXI.Texture.fromImage('assets/images/markers/arbalester.png');
-    const sprite = new PIXI.Sprite(texture);
-    sprite.x = 50;
-    sprite.y = 50;
-    // sprite.visible = true;
-    this.app.stage.addChild(sprite);
+    this.drawMarker();
+  }
+  @HostListener('ondragover') onDragOver(e) {
+    console.log('dragover');
+    e.preventDefault();
+  }
+  @HostListener('ondrop') onDropEnd(e) {
+    e.preventDefault();
+    const data = e.dataTransfer.getData('name');
+    console.log(data);
   }
 
   ngOnInit() {
@@ -43,15 +47,6 @@ export class CanvasComponent implements OnInit {
   }
 
   drawGrid() {
-  //   for( y coordinate... ) {
-  //     for( x coordinate...) {
-  //       if(something here) {
-  //         gr.lineStyle(0, 0x0000FF, 1);
-  //         gr.beginFill(PIXEL COLOR HERE, 1);
-  //         gr.drawRect(x+20, y+20, 1, 1);
-  //       }
-  //     }
-  //   }
     const texture = PIXI.Texture.fromImage(`${DEFAULTS.URL}grid-64x64.png`);
     const tilingSprite = new PIXI.extras.TilingSprite(
       texture,
@@ -59,5 +54,12 @@ export class CanvasComponent implements OnInit {
       this.app.screen.height
     );
     this.app.stage.addChild(tilingSprite);
+  }
+  drawMarker() {
+    const texture = new PIXI.Texture.fromImage('assets/images/markers/arbalester.png');
+    const sprite = new PIXI.Sprite(texture);
+    sprite.x = 50;
+    sprite.y = 50;
+    this.app.stage.addChild(sprite);
   }
 }

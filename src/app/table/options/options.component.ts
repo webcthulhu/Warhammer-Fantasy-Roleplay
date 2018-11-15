@@ -13,5 +13,7 @@ export class OptionsComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  onImageDragStart(event, marker) {
+    event.dataTransfer.setData('name', marker.name);
+  }
 }
