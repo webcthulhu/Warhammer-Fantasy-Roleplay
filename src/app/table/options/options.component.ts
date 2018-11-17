@@ -23,26 +23,26 @@ export class OptionsComponent implements OnInit, OnDestroy {
     event.dataTransfer.setData('name', marker.name);
     event.dataTransfer.setData('src', marker.src);
   }
-  onMouseDown(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    // code
-    this.onMouseMove(e);
-    this.onMouseUp(e);
-  }
-  onMouseMove(e) {
-    fromEvent(document, 'mousemove')
-      .pipe(takeUntil(this.unsubscribe$))
-      .subscribe(res => {
-        console.log('move');
-      });
-  }
-  onMouseUp(e) {
-    fromEvent(document, 'mouseup')
-      .pipe(takeUntil(this.unsubscribe$))
-      .subscribe(res => {
-        console.log('up');
-        this.unsubscribe$.next();
-      });
-  }
+  // onMouseDown(e) {
+  //   e.preventDefault();
+  //   e.stopPropagation();
+  //   // code
+  //   this.onMouseMove(e);
+  //   this.onMouseUp(e);
+  // }
+  // onMouseMove(e) {
+  //   fromEvent(document, 'mousemove')
+  //     .pipe(takeUntil(this.unsubscribe$))
+  //     .subscribe(res => {
+  //       console.log('move');
+  //     });
+  // }
+  // onMouseUp(e) {
+  //   fromEvent(document, 'mouseup')
+  //     .pipe(takeUntil(this.unsubscribe$))
+  //     .subscribe(res => {
+  //       console.log('up');
+  //       this.unsubscribe$.next();
+  //     });
+  // }
 }

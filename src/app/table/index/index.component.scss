@@ -29,7 +29,7 @@
   main {
     grid-area: main;
     position: relative;
-    overflow: auto;
-    padding: 0 5px;
+    overflow: hidden;
+    padding: 0;
   }
 }
