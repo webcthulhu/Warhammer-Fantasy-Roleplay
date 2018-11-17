@@ -1,5 +1,6 @@
 import {Component, ElementRef, HostListener, OnInit} from '@angular/core';
 import * as PIXI from 'pixi.js/dist/pixi.js';
+import {MARKERS} from '@app/shared/data/table-actors';
 
 const DEFAULTS = {
   URL: 'assets/table/',
@@ -24,25 +25,38 @@ export class CanvasComponent implements OnInit {
       resolution: 1,
       backgroundColor: 0xffffff
     });
+    el.nativeElement.append(this.app.view);
     // this.app.renderer.view.style.borderLeft = '1px solid black';
     // this.app.renderer.view.style.borderTop = '1px solid black';
-    el.nativeElement.append(this.app.view);
-    this.drawMarker();
+    // this.drawMarker();
   }
-  @HostListener('ondragover') onDragOver(e) {
+  @HostListener('dragover', ['$event']) onDragOver(e) {
     console.log('dragover');
+    e.stopPropagation();
     e.preventDefault();
   }
-  @HostListener('ondrop') onDropEnd(e) {
-    e.preventDefault();
-    const data = e.dataTransfer.getData('name');
-    console.log(data);
+  @HostListener('drop', ['$event']) onDropEnd(e) {
+    console.log('drop');
+    const name = e.dataTransfer.getData('name');
+    const src = e.dataTransfer.getData('src');
+    const offset = this.app.renderer.plugins.interaction.mouse.global;
+    const x = e.x + offset.x;
+    const y = e.y + offset.y;
+    console.log(name, x, y);
+    this.drawMarker(src, x, y);
   }
 
   ngOnInit() {
     // Resize
     // app.renderer.autoResize = true;
     // app.renderer.resize(512, 512);
+    PIXI.loader
+      .add(
+        MARKERS.map(m => 'assets/images/markers/' + m.src)
+      )
+      .load(() => {
+        console.log('loaded');
+      });
     this.drawGrid();
   }
 
@@ -55,11 +69,14 @@ export class CanvasComponent implements OnInit {
     );
     this.app.stage.addChild(tilingSprite);
   }
-  drawMarker() {
-    const texture = new PIXI.Texture.fromImage('assets/images/markers/arbalester.png');
+  drawMarker(src, x, y) {
+    // const texture = new PIXI.Texture.fromImage('assets/images/markers/' + src);
+    const texture = PIXI.loader.resources['assets/images/markers/' + src].texture;
     const sprite = new PIXI.Sprite(texture);
-    sprite.x = 50;
-    sprite.y = 50;
+    sprite.position.x = x;
+    sprite.position.y = y;
+    sprite.anchor.x = 0.5;
+    sprite.anchor.y = 0.5;
     this.app.stage.addChild(sprite);
   }
 }

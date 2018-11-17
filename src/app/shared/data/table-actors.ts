@@ -37,8 +37,8 @@ export const MARKERS: IMarker[] = [
     src: 'caravan_guard.png'
   },
   {
-    name: 'caravan_hand',
-    src: 'billman.png'
+    name: 'caravan hand',
+    src: 'caravan_hand.png'
   },
   {
     name: 'catapult',
