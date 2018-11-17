@@ -1,6 +1,7 @@
 import {Component, ElementRef, HostListener, OnInit} from '@angular/core';
 import * as PIXI from 'pixi.js/dist/pixi.js';
 import {MARKERS} from '@app/shared/data/table-actors';
+import * as Phaser from 'phaser/dist/phaser.js';
 
 const DEFAULTS = {
   URL: 'assets/table/',
@@ -30,6 +31,7 @@ export class CanvasComponent implements OnInit {
   private readonly creatures: PIXI.Container;
   private readonly overlay: PIXI.Container;
   constructor(private el: ElementRef) {
+    console.log(Phaser);
     this.app = new PIXI.Application(CONFIG);
     this.background = new PIXI.Container();
     this.terrain = new PIXI.Container();
